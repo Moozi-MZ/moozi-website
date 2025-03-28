@@ -1,0 +1,150 @@
+
+body {
+    position: relative;
+}
+.navbar-all {
+    height: 5rem;
+    /* box-shadow: 0.5px 0.1px 1px; */
+
+    /* border: 0.5px solid black; */
+    
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* color: #fff; */
+    
+
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    z-index: 1000;
+    
+
+}
+
+.navbar-container.hidden {
+    transform: translateY(-150%); /* Slide the navbar out of view */
+}
+.navbar-container.visible {
+    transform: translateY(0); /* Slide the navbar into view */
+}
+
+
+.navbar-container {
+    height: 4rem;
+    width: 85%;
+    background: rgb(1,126,255);
+    background: linear-gradient(155deg, rgba(1,126,255,1) 25%, rgba(255,255,255,1) 63%, rgba(1,126,255,1) 83%);   /* background-size: cover; */
+    /* box-shadow: 0.5px 0.1px 5px; */
+    margin: 0.5rem auto;
+    padding-top: 0rem;
+
+    /* border: 2px solid #ffffff; */
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20rem;
+
+
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    z-index: 1000;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.navbar-logo-container {
+    margin: auto 0;
+}
+.navbar-logo-container img {
+    width: 8rem;
+    height: auto;
+}
+
+.navbar-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.navbar-button-hover {
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+}
+.navbar-button-hover:hover {
+    background-color: #429fff;
+}
+
+.navbar-link-button {
+
+    border-radius: 20px;
+    padding: 0.5rem 0.7rem;
+    /* width: 5rem; */
+    text-align: center;
+
+    color: #fff;
+    
+}
+.navbar-link-button:hover {
+
+}
+
+.icon {
+    filter: invert(1);
+    /* margin: 0 auto; */   
+}
+
+
+.navbar-language-help-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.language-button {
+    margin-top:5px;
+    padding: 5px;
+    border-radius: 20px;
+    width: 45px;
+    
+    
+    color: #fff;
+
+    /* border: 2px solid #000000 ; */
+}
+.language-button:hover {
+
+
+}
+
+.language-button .icon {
+    margin: 0 auto;
+}
+
+.navbar-help {}
+.support-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    padding: 6px;
+    border-radius: 20px;
+    /* border: 2px solid #000000 ; */
+    margin: 0 auto;
+    width: 120px;
+
+    color: #fff;
+    gap: 0.5rem;
+}
+
+.support-contact:hover {
+
+}

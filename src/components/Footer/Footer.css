@@ -1,0 +1,125 @@
+.footer {
+    color: #fff;
+    background-color: #0080e2;
+    padding-top: 2rem ;
+    
+}
+
+.footer-container {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 15px;
+}
+
+.footer-socials-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-socials-box a:hover {
+    filter: brightness(0.7);
+    transition: 0.2s ease-in-out;
+}
+
+.separator {
+
+    height: 1px !important;
+    width: 100%;
+    background-color:white !important;
+    /* border: 5px solid white; */
+    /* margin: 20px 0px; */
+}
+
+.footer-services {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 50px;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+
+.footer-list-heading {
+    font-weight: bolder;
+    font-size: 22px;
+}
+.footer-list-item {
+    font-weight: 100;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.footer-list-item:hover {
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
+}
+
+/* email */
+.mailing-subscription {
+    margin: 0 0;
+}
+.mailing-subscription h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.mail-input {
+    border: 3px solid black;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.mail-input-box {
+    width: 75%;
+    background: none !important;
+    height: 20px;
+    padding: 10px;
+}
+.mail-input-box:focus {
+    outline: none !important;
+}
+
+.focused {
+    border: 1px solid #fff;
+    transition: 0.1s ease-in-out;
+}
+
+.mail-submit {
+    /* border-left: 5px solid black; */
+    margin: 0 auto;
+}
+
+
+.copyright {
+    width: 100%;
+}
+
+.copyright p {
+    margin: 5px auto;
+    text-align: center;
+}
+
+

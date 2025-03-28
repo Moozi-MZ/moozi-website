@@ -1,0 +1,82 @@
+
+
+.hero-container {
+    margin-top: 6rem;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5rem;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(1,126,255,1) 83%);
+
+    height: 500px;
+
+    /* border: 2px solid black; */
+    border-radius: 30px;
+}
+
+.hero-book-a-ride {
+    width: 400px;
+    
+}
+
+.hero-h1 {
+    /* font-weight: bold; */
+    color:#fff;
+    font-size: 50px;
+    padding-bottom: 3.5rem;
+}
+
+.button-to-book {
+    display:flex;
+    flex-direction: row;
+    width: 175px;
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid #0080e2;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    
+
+    position: relative;
+
+    transition: background-color 0.3s ease;
+}
+
+.button-to-book p {
+    font-size: 20px;
+    color: #0080e2;
+}
+
+
+.button-to-book span  {
+    /* position: absolute; */
+    transition: transform 0.3s ease;
+    color: #0080e2;
+
+}
+
+.button-to-book:hover span  {
+    transform: translateX(10px);
+    color: #fff;
+}
+
+/* button hover sequence */
+.button-to-book:hover {
+    background-color: #0080e2;
+}
+
+.button-to-book:hover p {
+    color: #fff;
+}
+
+.hero-graphics {
+    /* border: 2px solid black; */
+    margin-top: -2rem;
+    width: 500px;
+    height: 350px;
+}
