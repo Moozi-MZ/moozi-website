@@ -43,19 +43,32 @@ body {
     border-radius: 50px;
 
     display: flex;
-    justify-content: space-evenly;
-    gap: 20rem;
+    justify-content: space-between;
+    
 
 
     transition: transform 0.3s ease-in-out; /* Smooth transition */
     z-index: 1000;
 }
 
+.navbar-standard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    margin: 0 auto;
+}
 .navbar-left {
     display: flex;
     flex-direction: row;
     gap: 3rem;
 }
+.navbar-right {
+    display: flex;
+    
+}
+
 
 .navbar-logo-container {
     margin: auto 0;

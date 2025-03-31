@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ICON from '../../assets/ICON.png'
 
 import './Footer.css';
 
-import { FaSquareFacebook, FaInstagram, FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareFacebook, FaInstagram, FaSquareXTwitter, FaTiktok, FaLinkedinIn, FaLinkedin } from "react-icons/fa6";
 import FooterLogo from '../../assets/logo-white-letters.png'
 
 export const Footer = () => {
@@ -21,12 +22,13 @@ export const Footer = () => {
                     </div>
                     <div className='footer-socials'>
                         <span>
-                            Siga-nos Aqui:
+                            Follow Us:
                         </span>
                         <div className='footer-socials-box'>
                             <Link to=''><FaSquareFacebook size={35} /></Link>
                             <Link to=''><FaInstagram size={36}/></Link>
-                            <Link to=''><FaSquareXTwitter size={36}/></Link>
+                            <Link to=''><FaTiktok size={36}/></Link>
+                            <Link to=''><FaLinkedinIn size={36}/></Link>
                         </div>
                     </div>
 
@@ -74,8 +76,11 @@ export const Footer = () => {
                 <div className='separator'></div>
 
                 <div className='copyright'>
-                    <p>Copyright © 2024 - Moozi, Lda</p>
-                    <p className='copyright-credit'>Designed by <Link to=''>Leonardo Colaço</Link></p>
+                    <p className='copyright-text'>Copyright © 2024 - Moozi, Lda</p>
+                    <p className='copyright-credit'>
+                        Designed by&nbsp; <Link to='https://leonardobloom.github.io/portfolio-website/'> <span><img src={ICON} alt=""/></span></Link>
+                    </p>
+                    
                 </div>
             </div>
         </div>

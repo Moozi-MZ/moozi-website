@@ -40,7 +40,9 @@ export const Navbar = () => {
     <>
         <div className={`navbar-all `}>
             <div className={`navbar-container ${navbarVisible ? 'visible' : 'hidden'}`}>
-                
+
+                <div className='navbar-standard-container'>
+
                 <div className="navbar-left">
                     <div className="navbar-logo-container">
                         <img src={ICON_WHITEBG} ></img>
@@ -77,32 +79,33 @@ export const Navbar = () => {
                 </div>
                 <div className="navbar-right">
 
+                    <div className="navbar-language-help-container">
+                        <div className='navbar-language-select'>
+                            <div className="dropdown dropdown-bottom ">
+                                <div tabIndex={0} className="language-button navbar-button-hover">
+                                    <img  className="icon" src={LANGUAGE_EN} width={ICON_SIZE} />
+                                </div>
+                                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-40 p-2 shadow-sm">
+                                    <li><a>Item 1</a></li>
+                                    <li><a>Item 2</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="navbar-help">
+                            <div className="support-contact navbar-button-hover">
+                                <img className="icon"  src={SUPPORT_ICON} width={ICON_SIZE}/>
+                                <div>
+                                    <p>Support</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 </div>
 
 
-                <div className="navbar-language-help-container">
-                    <div className='navbar-language-select'>
-                        <div className="dropdown dropdown-bottom ">
-                            <div tabIndex={0} className="language-button navbar-button-hover">
-                                <img  className="icon" src={LANGUAGE_EN} width={ICON_SIZE} />
-                            </div>
-                            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-40 p-2 shadow-sm">
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 2</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="navbar-help">
-                        <div className="support-contact navbar-button-hover">
-                            <img className="icon"  src={SUPPORT_ICON} width={ICON_SIZE}/>
-                            <div>
-                                <p>Support</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
 
             </div>
         </div>
