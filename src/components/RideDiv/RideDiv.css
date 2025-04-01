@@ -1,0 +1,11 @@
+.ride-container {
+    height: 400px;
+    width: 100%;
+}
+
+.ride-container-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

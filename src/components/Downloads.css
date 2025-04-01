@@ -1,0 +1,27 @@
+
+.downloads-container {
+    /* margin: 40px auto; */
+    /* background-color: #f9fafb;s */
+    padding: 0px 30px 80px 0px;
+
+}
+.downloads-container h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.downloads-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.download-button {
+
+}
+
+.android, .iphone {
+    width: 250px;
+}

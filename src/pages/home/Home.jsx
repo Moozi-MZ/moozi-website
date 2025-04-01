@@ -13,6 +13,8 @@ import { FeatureTwo } from '../../components/Features/FeatureTwo';
 import { Footer } from '../../components/Footer/Footer';
 // import Marquee from '../../components/Marquee/MarqueeLine';
 import MarqueeLine from '../../components/Marquee/MarqueeLine';
+import RideDiv from '../../components/RideDiv/RideDiv';
+import { Downloads } from '../../components/Downloads';
 
 export const Home = () => {
 
@@ -51,10 +53,15 @@ export const Home = () => {
                     <img src={HERO_ILLUSTRATION} alt="" />
                 </div>
             </div>
-
+            
             <FeatureOne />
 
+            <Downloads />
+
+
             <MarqueeLine />
+
+            <RideDiv />
 
             <FeatureTwo />
 
