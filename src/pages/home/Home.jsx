@@ -54,16 +54,16 @@ export const Home = () => {
                 </div>
             </div>
             
+            <MarqueeLine />
+            <RideDiv />
             <FeatureOne />
 
-            <Downloads />
 
 
-            <MarqueeLine />
 
-            <RideDiv />
 
             <FeatureTwo />
+            {/* <Downloads /> */}
 
             <Footer />
 

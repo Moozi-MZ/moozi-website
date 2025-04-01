@@ -1,3 +1,17 @@
 .customer-support-graphic {
     margin: 30px 20px;
 }
+
+.secure-img {
+    /* margin: 30px 20px; */
+    margin: 10px auto;
+    width: 300px;
+}
+
+.f2-card {
+    transition: transform 0.2s ease;
+}
+.f2-card:hover {
+    transform: scale(1.02);
+    
+}

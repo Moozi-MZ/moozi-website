@@ -2,7 +2,7 @@
 .marquee-text {
     font-size: 40px;
     font-weight: bold;
-    padding: 0px 0px 50px 0px ;
+    padding: 20px 0px 20px 0px ;
 
     background-image: linear-gradient(to right, #017eff, #003569, #429eff); /* Gradient colors */
   -webkit-background-clip: text; /* Clips the background to the text */

@@ -7,6 +7,7 @@ import './Footer.css';
 
 import { FaSquareFacebook, FaInstagram, FaSquareXTwitter, FaTiktok, FaLinkedinIn, FaLinkedin } from "react-icons/fa6";
 import FooterLogo from '../../assets/logo-white-letters.png'
+import { Downloads } from '../Downloads';
 
 export const Footer = () => {
 
@@ -18,7 +19,8 @@ export const Footer = () => {
             <div className='footer-container'>
                 <div className='footer-top'>
                     <div className='footer-logo'>
-                        <img src={FooterLogo} alt='footer-logo' width={130} height={70}></img>
+                        <img className='footer-logo-img' src={FooterLogo} alt='footer-logo' width={130} height={70}></img>
+                        <Downloads />
                     </div>
                     <div className='footer-socials'>
                         <span>

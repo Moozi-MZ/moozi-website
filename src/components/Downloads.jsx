@@ -9,7 +9,7 @@ export const Downloads = () => {
   return (
     
     <div className='downloads-container'>
-        <h1>Download our App</h1>
+        {/* <h1>Download our App</h1> */}
         <div className='downloads-content'>
             <Link to=''>
                 <div className='download-button'>

@@ -1,49 +1,57 @@
 import React from 'react'
 import './RideDiv.css'
-import RideCar from '../RideCar/RideCar'
+import RideCard from '../RideCard/RideCard'
 import SEDAN from '../../assets/vehicles/sedan car-bro.svg'
+import SUV from '../../assets/vehicles/City driver-pana.svg';
+import SUVLUX from '../../assets/vehicles/SUV car-bro.svg';
 
 const RideDiv = () => {
   return (
     <div className='ride-container'>
+        <div className="mx-auto max-w-2xl lg:text-center">
+          <h2 className="text-base/7 font-semibold text-[#017eff]">Choose your ride</h2>
+          <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
+            Everything you need to get to where you want to be
+          </p>
+          <p className="mt-6 text-lg/8 text-gray-600">
+            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
+            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+          </p>
+        </div>
         <div className='ride-container-content'>
-            <div className="carousel carousel-center bg-['#017eff']  max-w-full space-x-4 p-4">
+            <div className="carousel carousel-center bg-['#017eff']  max-w-full space-x-6 p-4">
                 
                 <div className="carousel-item">
-                    <RideCar 
+                    <RideCard 
                         carPic={SEDAN}
                         carTitle='Toyota Sedan'
+                        carPersonCapacity='4'
+                        carBagCapacity='2'
+                        carPricing='50'
                         carDescription='50 MTn'
                     />
                 </div>
                 <div className="carousel-item">
-                    <RideCar 
-                        carPic={SEDAN}
-                        carTitle='Toyota Sedan'
-                        carDescription='A thingy'
+                    <RideCard 
+                    carPic={SUV}
+                    carTitle='Toyota SUV'
+                    carPersonCapacity='5'
+                    carBagCapacity='3'
+                    carPricing='100'
+                    carDescription='Description of car'
                     />
                 </div>
                 <div className="carousel-item">
-                    <RideCar 
-                    carPic={SEDAN}
-                    carTitle='Toyota Sedan'
-                    carDescription='A thingy'
+                    <RideCard 
+                        carPic={SUVLUX}
+                        carTitle='Toyota Luxury SUV'
+                        carPersonCapacity='6'
+                        carBagCapacity='3'
+                        carPricing='150'
+                        carDescription='Description'
                     />
                 </div>
-                <div className="carousel-item">
-                    <RideCar 
-                    carPic={SEDAN}
-                    carTitle='Toyota Sedan'
-                    carDescription='A thingy'
-                    />
-                </div>
-                <div className="carousel-item">
-                    <RideCar 
-                    carPic={SEDAN}
-                    carTitle='Toyota Sedan'
-                    carDescription='A thingy'
-                    />
-                </div>
+                
             </div>
             
         </div>

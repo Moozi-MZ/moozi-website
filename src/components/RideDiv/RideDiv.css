@@ -1,6 +1,15 @@
 .ride-container {
-    height: 400px;
+    /* height: 400px; */
     width: 100%;
+    /* margin-bottom: 80px; */
+    margin-top: 40px;
+}
+
+.ride-container-caption {
+    font-size: 30px;
+    font-weight: 500;
+    color: #208fff;
+    text-align: center;
 }
 
 .ride-container-content {
@@ -8,4 +17,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    /* height:50rem; */
+}
+
+
+
+.carousel-item {
+    transition: 0.3s ease;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+
+    
 }

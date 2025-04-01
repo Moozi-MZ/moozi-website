@@ -18,6 +18,17 @@
     justify-content: space-between;
 }
 
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.footer-logo-img {
+    height: 100%;
+    width: 170px;
+}
+
 .footer-socials {
     display: flex;
     flex-direction: row;
