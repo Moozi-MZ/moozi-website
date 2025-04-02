@@ -19,7 +19,7 @@ const RideDiv = () => {
           </p> */}
         </div>
         <div className='ride-container-content'>
-            <div className="carousel carousel-center bg-['#017eff']  max-w-full space-x-6 p-4">
+            <div className="carousel overflow-x-auto carousel-center bg-['#017eff']  max-w-full space-x-6 p-4">
                 
                 <div className="carousel-item">
                     <RideCard 
@@ -39,6 +39,26 @@ const RideDiv = () => {
                     carBagCapacity='3'
                     carPricing='100'
                     carDescription='Description of car'
+                    />
+                </div>
+                <div className="carousel-item">
+                    <RideCard 
+                        carPic={SUVLUX}
+                        carTitle='Toyota Luxury SUV'
+                        carPersonCapacity='6'
+                        carBagCapacity='3'
+                        carPricing='150'
+                        carDescription='Description'
+                    />
+                </div>
+                <div className="carousel-item">
+                    <RideCard 
+                        carPic={SUVLUX}
+                        carTitle='Toyota Luxury SUV'
+                        carPersonCapacity='6'
+                        carBagCapacity='3'
+                        carPricing='150'
+                        carDescription='Description'
                     />
                 </div>
                 <div className="carousel-item">

@@ -17,73 +17,52 @@ export const Footer = () => {
     <>
         <div className='footer'>
             <div className='footer-container'>
-                <div className='footer-top'>
-                    <div className='footer-logo'>
-                        <img className='footer-logo-img' src={FooterLogo} alt='footer-logo' width={130} height={70}></img>
-                        <Downloads />
-                    </div>
-                    <div className='footer-socials'>
-                        <span>
-                            Follow Us:
-                        </span>
-                        <div className='footer-socials-box'>
+                <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+  <nav>
+    <h6 className="footer-title">Services</h6>
+    <a className="link link-hover">Branding</a>
+    <a className="link link-hover">Design</a>
+    <a className="link link-hover">Marketing</a>
+    <a className="link link-hover">Advertisement</a>
+  </nav>
+  <nav>
+    <h6 className="footer-title">Company</h6>
+    <a className="link link-hover">About us</a>
+    <a className="link link-hover">Contact</a>
+    <a className="link link-hover">Jobs</a>
+    <a className="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <h6 className="footer-title">Legal</h6>
+    <a className="link link-hover">Terms of use</a>
+    <a className="link link-hover">Privacy policy</a>
+    <a className="link link-hover">Cookie policy</a>
+  </nav>
+</footer>
+<footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 mb-20 sm:mb-10">
+  <nav className="md:place-self-center mx-auto md:justify-self-center">
+    <div className="grid grid-flow-col gap-4 ">
+    <div className='footer-socials-box'>
                             <Link to=''><FaSquareFacebook size={35} /></Link>
                             <Link to=''><FaInstagram size={36}/></Link>
                             <Link to=''><FaTiktok size={36}/></Link>
                             <Link to=''><FaLinkedinIn size={36}/></Link>
                         </div>
-                    </div>
-
-                </div>
-                <div className='separator'></div>
-
-                <div className='footer-services'>
-                    <div className='footer-list'>
-                        <h5 className='footer-list-heading'>Info</h5>
-                        <br></br>
-                        <Link><h5 className='footer-list-item'>Newsroom</h5></Link>
-                        <Link><h5 className='footer-list-item'>Careers</h5></Link>
-                        <Link><h5 className='footer-list-item'>FAQs</h5></Link>
-                        <Link><h5 className='footer-list-item'>Site Map</h5></Link>
-                        <Link><h5 className='footer-list-item'>Blog</h5></Link>                        
-                    </div>
-                    <div className='footer-list'>
-                        <h5 className='footer-list-heading'>Partners</h5>
-                        <br></br>
-                        <Link><h5 className='footer-list-item'>Franchising</h5></Link>
-                        <Link><h5 className='footer-list-item'>Inverstor Relations</h5></Link>
-                        <Link><h5 className='footer-list-item'>PF Purpose</h5></Link>
-                    </div>
-                    <div className='footer-list'>
-                        <h5 className='footer-list-heading'>Legal</h5>
-                        <br></br>
-                        <Link><h5 className='footer-list-item'>Privacy Policy</h5></Link>
-                        <Link><h5 className='footer-list-item'>Terms and Conditions</h5></Link>
-                        <Link><h5 className='footer-list-item'>FAQs</h5></Link>
-                        <Link><h5 className='footer-list-item'>Site Map</h5></Link>
-                        <Link><h5 className='footer-list-item'>Blog</h5></Link>
-                    </div>
-                    {/* <div className='mailing-subscription'>
-                        <h1>Subscreva-se a nossa lista de correios! </h1>
-                        <div className={`mail-input ${isFocused ? 'focused' : ''}`}>
-                            <input 
-                            onFocus={() => setIsFocused(true)}
-                            onBlur={() => setIsFocused(false)}
-                            type='text' className='mail-input-box' placeholder='Escreva o seu email'></input>
-                            <button type='submit' className='mail-submit'>Subscrever</button>
-                        </div>
-                    </div> */}
-                </div>
-
-                <div className='separator'></div>
-
-                <div className='copyright'>
+    </div>
+  </nav>
+  <aside className="flex mx-auto items-center">
+    
+    
+      <div className='copyright mx-auto'>
                     <p className='copyright-text'>Copyright © 2024 - Moozi, Lda</p>
                     <p className='copyright-credit'>
                         Designed by&nbsp; <Link to='https://leonardobloom.github.io/portfolio-website/'> <span><img src={ICON} alt=""/></span></Link>
                     </p>
                     
                 </div>
+    
+  </aside>
+</footer>
             </div>
         </div>
     </>

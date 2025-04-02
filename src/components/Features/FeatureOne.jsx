@@ -29,7 +29,7 @@ const features = [
 
 export const FeatureOne = () => {
   return (
-    <div className="bg-white py-24 sm:py-20">
+    <div className="bg-white py-10 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base/7 font-semibold text-[#017eff]">Book a ride</h2>

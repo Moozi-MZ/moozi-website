@@ -10,11 +10,13 @@ import { Home } from './pages/home/Home';
 import { BookingPage } from './pages/booking_page/BookingPage';
 import Lenis from '@studio-freight/lenis';
 import SmoothScroll from './components/SmoothScroll';
+import { Test } from './Test';
 
 
 
 
 function App() {
+  
 
   // useEffect(() => {
   //   const lenis = new Lenis ({
@@ -49,7 +51,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         {/* <Route path='/booking-page' element={<BookingPage />} /> */}
-
+        {/* <Route path='/test' element={<Test />} /> */}
       </Routes>
 
     {/* </SmoothScroll> */}

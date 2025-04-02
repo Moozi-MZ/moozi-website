@@ -8,7 +8,7 @@ const MarqueeLine = () => {
       autoFill={true}
       pauseOnHover={true}
       gradient={true}
-      gradientWidth={600}
+      gradientWidth={200}
       direction='right'
 
     >

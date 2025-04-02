@@ -4,7 +4,10 @@ import './Navbar.css';
 import ICON_WHITEBG from '../../assets/logo-white-letters.png';
 import LANGUAGE_EN from '../../assets/button-icons/english.svg';
 import SUPPORT_ICON from '../../assets/button-icons/support-icon.svg';
+import { GlobeEuropeAfricaIcon } from '@heroicons/react/24/outline';
 import { ICON_SIZE } from '../../utils/Constants';
+import { Downloads } from '../Downloads';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
 
@@ -104,11 +107,97 @@ export const Navbar = () => {
                     </div>
                 </div>
                 </div>
-
-
-
             </div>
         </div>
+
+        <div className="navbar-all-mobile">
+  <div className="navbar-container-mobile">
+    <div className="drawer">
+      {/* Hidden checkbox for toggle */}
+      <input id="my-drawer" type="checkbox" className="drawer-toggle hidden" />
+
+      {/* Main Navbar */}
+      <div className="overflow-y-visible tw-navbar-mobile navbar w-dvw bg-base-[#017eff] ">
+        {/* Sidebar Toggle Button (Part of Navbar) */}
+        <div className="flex-none">
+          <label htmlFor="my-drawer" className="btn btn-square btn-ghost text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block h-5 w-5 stroke-current"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </label>
+          
+        </div>
+
+        {/* Navbar Title */}
+        <div className="flex-1">
+          <a className=" text-2xl mx-2 font-bold text-white">Moozi</a>
+        </div>
+        <div className="flex-none text-white">
+            <ul className="menu menu-horizontal">
+                <li>
+                    <details>
+                    <summary><GlobeEuropeAfricaIcon aria-hidden="true" className="size-8 text-white" /> </summary>
+                    <ul className="text-black rounded-2xl w-40
+                    h-20 right-[0.01rem]">
+                        <li><a>English</a></li>
+                        <li><a>Português</a></li>
+                    </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+        
+      </div>
+
+      {/* Sidebar (Menu + Navbar Content) */}
+      <div className="drawer-side">
+        <label htmlFor="my-drawer" className="drawer-overlay"></label>
+
+        <div className="menu bg-base-200 text-base-content min-h-full w-80 p-4 flex flex-col">
+            {/* Sidebar Navbar (Keeps button & title visible) */}
+            <div className="flex items-center justify-between mb-4">
+                <span className="text-xl font-bold">Moozi</span>
+                <label htmlFor="my-drawer" className="btn btn-square btn-ghost">
+                ✖
+                </label>
+            </div>
+
+            {/* Sidebar Links */}
+            <ul className="text-3xl py-4">
+                <li className="py-4"><a href="#">Ride</a></li>
+                <li><a href="#">Drive</a></li>
+            </ul>
+
+            {/* Push this div to the bottom */}
+            <div className="bottom-side mt-">
+                <Downloads />
+                    <Link to=''>
+                <div className="support-contact navbar-button-hover">
+                                <img className="icon"  src={SUPPORT_ICON} width={ICON_SIZE}/>
+                                <div>
+                                    <p>Support</p>
+                                </div>
+                            </div>
+                    </Link>
+            </div>
+        
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 
     </>
   )

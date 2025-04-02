@@ -1,6 +1,7 @@
 
 body {
-    position: relative;
+    /* position: relative; */
+    /* overflow-x: hidden; */
 }
 .navbar-all {
     height: 5rem;
@@ -17,9 +18,14 @@ body {
     
 
     transition: transform 0.3s ease-in-out; /* Smooth transition */
-    z-index: 1000;
+    z-index: 1001;
+    
     
 
+}
+
+.menu-horizontal {
+    z-index: 1000;
 }
 
 .navbar-container.hidden {
@@ -49,6 +55,11 @@ body {
 
     transition: transform 0.3s ease-in-out; /* Smooth transition */
     z-index: 1000;
+}
+
+.navbar-all-mobile {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar-standard-container {
@@ -159,5 +170,95 @@ body {
 }
 
 .support-contact:hover {
+
+}
+
+@media (max-width: 768px) {
+
+.navbar-all {
+    display: none;
+}
+
+.navbar-all-mobile {
+    height: 4rem;
+    /* box-shadow: 0.5px 0.1px 1px; */
+
+    /* border: 0.5px solid black; */
+    background-color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* color: #fff; */
+    
+    /* overflow-y: visible; */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    z-index: 1001;
+    
+}
+
+.navbar-container-mobile {
+    height: 4rem;
+    width: 100%;
+    background: rgb(1,126,255);
+    /* background: linear-gradient(155deg, rgba(1,126,255,1) 25%, rgba(255,255,255,1) 63%, rgba(1,126,255,1) 83%);   background-size: cover; */
+    /* box-shadow: 0.5px 0.1px 5px; */
+    /* margin: 0.5rem auto; */
+    /* padding-top: 0rem; */
+
+    /* border: 2px solid #ffffff; */
+    /* border-radius: 50px; */
+
+    display: flex;
+    justify-content: space-between;
+    
+
+
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    z-index: 1001;
+}
+
+
+.tw-navbar-mobile {
+    background: rgb(1,126,255);
+    /* background: linear-gradient(180deg, #017eff 65%, #ffffff 99%);   background-size: cover; */
+    position: fixed;
+
+}
+
+.menu-horizontal {
+    overflow-y: visible;
+    z-index: 1001;
+    /* position:fixed; */
+}
+
+.bottom-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.support-contact {
+    justify-content: center;
+    margin: 10px 0;
+    align-items: center;
+    
+
+    font-size: 25px;
+    width: 150px;
+    
+}
+
+.support-contact {
+    filter: invert(1);
+    
+}
+
+.support-contact:hover {
+    background: none;
+}
+
+
+
 
 }

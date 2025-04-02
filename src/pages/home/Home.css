@@ -1,7 +1,9 @@
 
-
+.html {
+    width: 100%;
+}
 .hero-container {
-    margin-top: 6rem;
+    margin-top: 2rem;
     padding: 60px 40px;
     display: flex;
     flex-direction: row;
@@ -22,6 +24,10 @@
     display: flex;
     flex-direction: column;
     
+}
+
+.no-show {
+    display: none;
 }
 
 .hero-h1 {
@@ -91,3 +97,91 @@
     width: 500px;
     height: 350px;
 }
+
+.hero-container-mobile {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+
+.hero-container {
+    display: none;
+}
+
+.hero-container-mobile {
+    display: flex;
+    /* height: 500px; */
+    width: 100%;
+    background-color: #0080e2;
+    padding-top: 5rem;
+
+    
+
+}
+
+.hero-container-mobile {
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, #ffffff 10%, #017eff 83%);
+
+}
+
+.hero-h1 {
+    font-size: 45px;
+    text-align: center;
+
+
+    background: linear-gradient(180deg, #fff 50%,#fff 95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.hero-graphics-logo {
+    width: 300px;
+    margin-top: -3rem;
+    margin-bottom: 0rem;
+}
+.hero-graphics {
+    width: 350px;
+    margin: 5px auto;
+}
+
+.ride-caption {
+    text-align: center;
+}
+
+
+/* SCRIPT */
+.web-booking-wrapper {
+    width: 100vw !important;
+    height: 75% !important;
+}
+
+.booking-opened {
+    height: 65% !important;
+}
+
+.web-booking-wrapper.hide {
+    width: 100vw !important;
+    max-height: 50px !important;
+}
+
+.web-booking-wrapper .iframe-header {
+    width: 100vw !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+  }
