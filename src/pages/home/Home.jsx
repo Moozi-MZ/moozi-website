@@ -15,6 +15,7 @@ import { Footer } from '../../components/Footer/Footer';
 import MarqueeLine from '../../components/Marquee/MarqueeLine';
 import RideDiv from '../../components/RideDiv/RideDiv';
 import { Downloads } from '../../components/Downloads';
+import { DriverDiv } from '../../components/DriverDiv/DriverDiv';
 
 export const Home = () => {
 
@@ -55,14 +56,14 @@ export const Home = () => {
             </div>
             
             <MarqueeLine />
-            <RideDiv />
             <FeatureOne />
-
+            <RideDiv />
 
 
 
 
             <FeatureTwo />
+            <DriverDiv />
             {/* <Downloads /> */}
 
             <Footer />

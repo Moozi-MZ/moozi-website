@@ -3,6 +3,17 @@
     width: 100%;
     /* margin-bottom: 80px; */
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.ride-caption {
+    width: 600px;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+}
+.ride-p {
+    /* width: 800px;s */
+    /* margin: 20px auto; */
 }
 
 .ride-container-caption {

@@ -3,6 +3,7 @@
     font-size: 40px;
     font-weight: bold;
     padding: 20px 0px 20px 0px ;
+    /* margin-bottom: 40px; */
 
     background-image: linear-gradient(to right, #017eff, #003569, #429eff); /* Gradient colors */
   -webkit-background-clip: text; /* Clips the background to the text */

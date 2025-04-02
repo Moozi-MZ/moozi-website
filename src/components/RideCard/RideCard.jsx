@@ -24,7 +24,7 @@ const RideCard = ({carPic, carTitle, carDescription, carPersonCapacity, carBagCa
                     <span>{carBagCapacity}</span>
                 </div>
             </div>
-            <p className='car-price'>Desde: <b>{carPricing}</b> MTn</p>
+            <p className='car-price'>Starting at: <b>{carPricing}</b> MTn</p>
             <div className="card-actions">
             {/* <button className="btn btn-primary">Buy Now</button> */}
             </div>

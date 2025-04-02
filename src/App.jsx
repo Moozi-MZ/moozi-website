@@ -45,14 +45,14 @@ function App() {
 
   return (
     <>
-    <SmoothScroll >
+    {/* <SmoothScroll > */}
       <Routes>
         <Route path='/' element={<Home />} />
         {/* <Route path='/booking-page' element={<BookingPage />} /> */}
 
       </Routes>
 
-    </SmoothScroll>
+    {/* </SmoothScroll> */}
 
     
     </>
