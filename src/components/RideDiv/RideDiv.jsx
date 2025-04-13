@@ -51,26 +51,7 @@ const RideDiv = () => {
                         carDescription='Description'
                     />
                 </div>
-                <div className="carousel-item">
-                    <RideCard 
-                        carPic={SUVLUX}
-                        carTitle='Toyota Luxury SUV'
-                        carPersonCapacity='6'
-                        carBagCapacity='3'
-                        carPricing='150'
-                        carDescription='Description'
-                    />
-                </div>
-                <div className="carousel-item">
-                    <RideCard 
-                        carPic={SUVLUX}
-                        carTitle='Toyota Luxury SUV'
-                        carPersonCapacity='6'
-                        carBagCapacity='3'
-                        carPricing='150'
-                        carDescription='Description'
-                    />
-                </div>
+                
                 
             </div>
             

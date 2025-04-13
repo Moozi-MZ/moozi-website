@@ -25,16 +25,7 @@ const Carousel = () => {
               description: 'A beautiful view of the stars and galaxy skies.',
               image: 'https://img.freepik.com/free-vector/driving-concept-illustration_114360-14312.jpg?semt=ais_hybrid&w=740'
             },
-            {
-              title: 'Starry Night',
-              description: 'A beautiful view of the stars and galaxy skies.',
-              image: 'https://img.freepik.com/free-vector/driving-concept-illustration_114360-14312.jpg?semt=ais_hybrid&w=740'
-            },
-            {
-              title: 'Starry Night',
-              description: 'A beautiful view of the stars and galaxy skies.',
-              image: 'https://img.freepik.com/free-vector/driving-concept-illustration_114360-14312.jpg?semt=ais_hybrid&w=740'
-            }
+            
           ];
   
 

@@ -38,6 +38,9 @@ export const Footer = () => {
     <a className="link link-hover">Privacy policy</a>
     <a className="link link-hover">Cookie policy</a>
   </nav>
+  <nav>
+    <Downloads />
+  </nav>
 </footer>
 <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 mb-20 sm:mb-10">
   <nav className="md:place-self-center mx-auto md:justify-self-center">
