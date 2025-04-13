@@ -4,7 +4,7 @@ body {
     /* overflow-x: hidden; */
 }
 .navbar-all {
-    height: 5rem;
+    height: 4rem;
     /* box-shadow: 0.5px 0.1px 1px; */
 
     /* border: 0.5px solid black; */
@@ -38,15 +38,15 @@ body {
 
 .navbar-container {
     height: 4rem;
-    width: 85%;
-    background: rgb(1,126,255);
-    background: linear-gradient(155deg, rgba(1,126,255,1) 25%, rgba(255,255,255,1) 63%, rgba(1,126,255,1) 83%);   /* background-size: cover; */
+    width: 100%;
+    background: #0080e2;
+    /* background: linear-gradient(155deg, rgba(1,126,255,1) 25%, rgba(255,255,255,1) 63%, rgba(1,126,255,1) 83%);   background-size: cover; */
     /* box-shadow: 0.5px 0.1px 5px; */
-    margin: 0.5rem auto;
-    padding-top: 0rem;
+    margin: 0 auto;
+    /* padding-top: 0rem; */
 
     /* border: 2px solid #ffffff; */
-    border-radius: 50px;
+    /* border-radius: 50px; */
 
     display: flex;
     justify-content: space-between;
@@ -201,7 +201,7 @@ body {
 .navbar-container-mobile {
     height: 4rem;
     width: 100%;
-    background: rgb(1,126,255);
+    background: #0080e2;
     /* background: linear-gradient(155deg, rgba(1,126,255,1) 25%, rgba(255,255,255,1) 63%, rgba(1,126,255,1) 83%);   background-size: cover; */
     /* box-shadow: 0.5px 0.1px 5px; */
     /* margin: 0.5rem auto; */
@@ -221,7 +221,7 @@ body {
 
 
 .tw-navbar-mobile {
-    background: rgb(1,126,255);
+    background: #0080e2;
     /* background: linear-gradient(180deg, #017eff 65%, #ffffff 99%);   background-size: cover; */
     position: fixed;
 

@@ -17,15 +17,13 @@ import MarqueeLine from '../../components/Marquee/MarqueeLine';
 import RideDiv from '../../components/RideDiv/RideDiv';
 import { Downloads } from '../../components/Downloads';
 import { DriverDiv } from '../../components/DriverDiv/DriverDiv';
+import Carousel from '../../components/Carousel/Carousel';
+
 
 export const Home = () => {
-
-
     
 
-
-
-
+    
 
     const [bookRideClicked, setBookRideClicked] = useState(false)
 
@@ -50,8 +48,7 @@ export const Home = () => {
     <>
         <Navbar />
         <div className="home-content">
-            {/* DESKTOP HERO */}
-            <div className="hero-container standard-container-config">
+            <div className="alt-hero-container standard-container-config">
                 <div className="hero-book-a-ride">
                     <h1 className='hero-h1'>Move Anywhere, Anytime, with Moozi :)</h1>
                     <div onClick={HandleBookARideClick} className="button-to-book">
@@ -63,6 +60,24 @@ export const Home = () => {
                     <img src={HERO_ILLUSTRATION} alt="" />
                 </div>
             </div>
+
+
+
+            {/* DESKTOP HERO */}
+            <div className="hero-container standard-container-config no-show">
+                <div className="hero-book-a-ride">
+                    <h1 className='hero-h1'>Move Anywhere, Anytime, with Moozi :)</h1>
+                    <div onClick={HandleBookARideClick} className="button-to-book">
+                        <p> Book a ride </p>
+                        <span><FontAwesomeIcon icon={faArrowRight} /></span>
+                    </div>
+                </div>
+                <div className="hero-graphics">
+                    <img src={HERO_ILLUSTRATION} alt="" />
+                </div>
+            </div>
+
+
 
             {/* MOBILE HERO */}
             <div className='hero-container-mobile'>
@@ -76,8 +91,11 @@ export const Home = () => {
                 </div>
                 </div>
             </div>
-            
+
             <MarqueeLine />
+
+            <Carousel />
+            
             <FeatureOne />
             <RideDiv />
 

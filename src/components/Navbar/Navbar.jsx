@@ -14,7 +14,7 @@ export const Navbar = () => {
     const [lastScrollY, setLastScrollY] = useState(0);
     const [navbarVisible, setNavbarVisible] = useState(true);
 
-    const SCROLL_THRESHOLD = 150;
+    const SCROLL_THRESHOLD = 120;
 
     // Function to handle scroll direction
     const handleScroll = () => {

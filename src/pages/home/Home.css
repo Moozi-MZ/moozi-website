@@ -1,9 +1,13 @@
+.no-show {
+    display: none;
+}
 
 .html {
     width: 100%;
 }
 .hero-container {
     margin-top: 2rem;
+    
     padding: 60px 40px;
     display: flex;
     flex-direction: row;
@@ -17,6 +21,23 @@
 
     /* border: 2px solid black; */
     border-radius: 30px;
+}
+
+.alt-hero-container {
+    width: 100%;
+
+    padding: 4rem 4rem;
+
+    /* margin-top: -1rem; */
+    margin: -1rem auto -1rem auto;
+    margin-bottom: 2rem !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 20%, #0080e2 83%);
+
+
 }
 
 .hero-book-a-ride {
@@ -38,7 +59,7 @@
     padding-bottom: 3.5rem;
 
     
-    background: linear-gradient(180deg, #fff,#fff,#017eff , #017eff);
+    background: linear-gradient(180deg, #fff,#fff,#0080e2 , #0080e2);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -49,7 +70,8 @@
 .button-to-book {
     display:flex;
     flex-direction: row;
-    width: 175px;
+    width: 220px;
+    height: 75px;
     cursor: pointer;
     padding: 5px;
     border: 2px solid #0080e2;
@@ -65,7 +87,7 @@
 }
 
 .button-to-book p {
-    font-size: 20px;
+    font-size: 24px;
     color: #0080e2;
 }
 
@@ -106,7 +128,7 @@
 @media (max-width: 768px) {
 
 
-.hero-container {
+.hero-container, .alt-hero-container {
     display: none;
 }
 
@@ -121,10 +143,15 @@
 
 }
 
+.carousel-container {
+    width: 92% !important;
+    margin: 0 auto !important;
+}
+
 .hero-container-mobile {
     width: 100%;
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, #ffffff 10%, #017eff 83%);
+    background: linear-gradient(0deg, #ffffff 10%, #0080e2 83%);
 
 }
 
