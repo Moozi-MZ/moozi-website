@@ -124,6 +124,11 @@
     display: none;
 }
 
+body .web-booking-wrapper .iframe-header {
+    border: none !important;
+    background: #0080e2 !important;
+}
+
 
 @media (max-width: 768px) {
 
@@ -199,7 +204,10 @@
 
 .web-booking-wrapper .iframe-header {
     width: 100vw !important;
+    
 }
+
+
 
 
 
