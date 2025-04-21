@@ -1,20 +1,18 @@
 // Dependencies
 import { useState } from 'react'
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
 // Style
 import './App.css';
 
 // Components
-import { Home } from './pages/home/Home';
+import Home from './pages/home/Home';
 import { BookingPage } from './pages/booking_page/BookingPage';
 // import Lenis from '@studio-freight/lenis';
 import SmoothScroll from './components/SmoothScroll';
 import { Test } from './Test';
 import { useLanguage } from './context/LanguageContext';
-
-
-
+import About from './pages/about/About';
 
 function App() {
 
@@ -61,16 +59,13 @@ function App() {
 
 
 
-
-  
-
   return (
     <>
     {/* <SmoothScroll > */}
       <Routes>
-        <Route path='/' element={<Home />} />
-        {/* <Route path='/booking-page' element={<BookingPage />} /> */}
-        <Route path='/test' element={<Test />} />
+      <Route path="/moozi-website/" element={<Navigate to="/moozi-website/home" />} />
+      <Route path="/moozi-website/home" element={<Home />} />
+      <Route path="/moozi-website/about" element={<About />} />
       </Routes>
 
     {/* </SmoothScroll> */}

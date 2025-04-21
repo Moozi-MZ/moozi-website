@@ -57,7 +57,7 @@ export const Navbar = () => {
 
                 <div className="navbar-left">
                     <div className="navbar-logo-container">
-                        <Link><img src={ICON_WHITEBG} ></img></Link>
+                        <Link to="/moozi-website/"><img src={ICON_WHITEBG} ></img></Link>
                     </div>
 
                     <div className="navbar-links-container">
@@ -81,7 +81,7 @@ export const Navbar = () => {
                         <div className="dropdown dropdown-hover ">
                             <div tabIndex={0} className="navbar-link-button navbar-button-hover">About</div>
                             <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                                <li><a>{language === 'en' ? `Who we Are` : `Quem Somos`}</a></li>
+                                <li><Link to='/moozi-website/about'>{language === 'en' ? `Who we Are` : `Quem Somos`}</Link></li>
                                 <li><a>{language === 'en' ? `Corporation Account` : `Conta Corporativa`}</a></li>
                             </ul>
                         </div>
@@ -174,8 +174,7 @@ export const Navbar = () => {
                             <p className='lang-list-p'>Português</p></a></li>
                         <li  onClick={() => changeLanguage('en')}><a>
                             <img className="lang_icon" src={EN_LANG} width={28} />
-                            <p className='lang-list-p'>English
-                        </p></a></li>
+                            <p className='lang-list-p'>English</p></a></li>
                     </ul>
                     </details>
                 </li>
@@ -199,21 +198,22 @@ export const Navbar = () => {
 
             {/* Sidebar Links */}
             <ul className="text-3xl py-4">
-                <li className="py-4"><a href="#">{language === 'en' ? `Client` : `Cliente`}</a></li>
-                <li><a href="#">{language === 'en' ? `Driver` : `Condutor`}</a></li>
+                <li className="py-4"><Link to="">{language === 'en' ? `Client` : `Cliente`}</Link></li>
+                <li><Link to="">{language === 'en' ? `Driver` : `Condutor`}</Link></li>
+                <li className='py-4'><Link to='/moozi-website/about'>{language === 'en' ? `About Us` : `Sobre Nós`}</Link></li>
             </ul>
 
             {/* Push this div to the bottom */}
             <div className="bottom-side mt-">
                 <Downloads />
-                    <Link to=''>
-                <div className="support-contact navbar-button-hover">
-                                <img className="icon"  src={SUPPORT_ICON} width={ICON_SIZE}/>
-                                <div>
-                                    <p>{language === 'en' ? `Support` : `Suporte`}</p>
-                                </div>
-                            </div>
-                    </Link>
+                <Link to="">
+                    <div className="support-contact navbar-button-hover">
+                        <img className="icon" src={SUPPORT_ICON} width={ICON_SIZE} />
+                        <div>
+                            <p>{language === 'en' ? `Support` : `Suporte`}</p>
+                        </div>
+                    </div>
+                </Link>
             </div>
         
         </div>

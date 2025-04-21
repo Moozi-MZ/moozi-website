@@ -22,7 +22,7 @@ import Carousel from '../../components/Carousel/Carousel';
 import { useLanguage } from '../../context/LanguageContext';
 
 
-export const Home = () => {
+const Home = () => {
     
     const { language } = useLanguage();
 
@@ -127,3 +127,5 @@ export const Home = () => {
     </>
   )
 }
+
+export default Home;
