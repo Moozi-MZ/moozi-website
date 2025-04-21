@@ -19,9 +19,14 @@ import { Downloads } from '../../components/Downloads';
 import { DriverDiv } from '../../components/DriverDiv/DriverDiv';
 import Carousel from '../../components/Carousel/Carousel';
 
+import { useLanguage } from '../../context/LanguageContext';
+
 
 export const Home = () => {
     
+    const { language } = useLanguage();
+
+    console.log("Language from home: ", language);
 
     
 
@@ -46,13 +51,19 @@ export const Home = () => {
 
   return (
     <>
-        <Navbar />
+        <Navbar language={language} />
         <div className="home-content">
             <div className="alt-hero-container standard-container-config">
                 <div className="hero-book-a-ride">
-                    <h1 className='hero-h1'>Move Anywhere, Anytime, with Moozi :)</h1>
+                    <h1 className='hero-h1'>
+                        {language === 'en' ? 
+                            `Move Anywhere, Anytime, with Moozi :)` : 
+                            `Daqui pra lá, sem stress com Moozi :D` }
+                    </h1>
                     <div onClick={HandleBookARideClick} className="button-to-book">
-                        <p> Book a ride </p>
+                        <p> {language === 'en' ? 
+                            `Book a ride` : 
+                            `Marcar viagem` } </p>
                         <span><FontAwesomeIcon icon={faArrowRight} /></span>
                     </div>
                 </div>
@@ -82,7 +93,9 @@ export const Home = () => {
             {/* MOBILE HERO */}
             <div className='hero-container-mobile'>
                 <div class='hero-content-mobile'>
-                <h1 className='hero-h1'>Move Anywhere, Anytime, with</h1>
+                <h1 className='hero-h1'>{language === 'en' ? 
+                            `Move Anywhere, Anytime, with` : 
+                            `Daqui pra lá, sem stress com` }</h1>
                 <div className="mx-auto hero-graphics-logo">
                     <img src={M_LOGO} />
                 </div>
@@ -92,21 +105,21 @@ export const Home = () => {
                 </div>
             </div>
 
-            <MarqueeLine />
+            <MarqueeLine language={language} />
 
-            <Carousel />
+            <RideDiv language={language} />
             
-            <FeatureOne />
-            <RideDiv />
+            <FeatureOne language={language} />
+            <Carousel language={language} />
 
 
 
 
-            <FeatureTwo />
-            <DriverDiv />
+            <FeatureTwo language={language} />
+            <DriverDiv language={language}/>
             {/* <Downloads /> */}
 
-            <Footer />
+            <Footer  language={language} />
 
         </div>
     </>

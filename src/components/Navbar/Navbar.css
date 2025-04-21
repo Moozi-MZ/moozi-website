@@ -153,6 +153,11 @@ body {
     margin: 0 auto;
 }
 
+
+.lang-list-p {
+    width: 70px;
+}
+
 .navbar-help {}
 .support-contact {
     display: flex;

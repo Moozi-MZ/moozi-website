@@ -4,6 +4,7 @@
 
 .html {
     width: 100%;
+    
 }
 .hero-container {
     margin-top: 2rem;
@@ -70,7 +71,7 @@
 .button-to-book {
     display:flex;
     flex-direction: row;
-    width: 220px;
+    width: 80%;
     height: 75px;
     cursor: pointer;
     padding: 5px;
@@ -87,8 +88,9 @@
 }
 
 .button-to-book p {
-    font-size: 24px;
+    font-size: 30px;
     color: #0080e2;
+    padding: 10px !important;
 }
 
 
@@ -96,6 +98,7 @@
     /* position: absolute; */
     transition: transform 0.3s ease;
     color: #0080e2;
+    font-size: 24px;
 
 }
 
@@ -122,6 +125,19 @@
 
 .hero-container-mobile {
     display: none;
+}
+
+body .web-booking-wrapper .iframe-header {
+    background: #0080e2 !important;
+}
+
+body button .btn .btn-primary {
+    background: #0080e2 !important;
+}
+
+.web-booking-wrapper {
+    /* width: 100vw !important; */
+    height: 90% !important;
 }
 
 

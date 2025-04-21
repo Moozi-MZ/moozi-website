@@ -1,17 +1,19 @@
 import React from 'react'
 import './RideDiv.css'
 import RideCard from '../RideCard/RideCard'
-import SEDAN from '../../assets/vehicles/sedan car-bro.svg'
-import SUV from '../../assets/vehicles/City driver-pana.svg';
-import SUVLUX from '../../assets/vehicles/SUV car-bro.svg';
+import BASE from '../../assets/vehicles/moozi-base.svg'
+import DELUXE from '../../assets/vehicles/moozi-deluxe.svg';
+// import SUVLUX from '../../assets/vehicles/SUV car-bro.svg';
 
-const RideDiv = () => {
+const RideDiv = ({language}) => {
   return (
     <div className='ride-container'>
         <div className="ride-caption mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base/7 font-semibold text-[#017eff]">Choose your ride</h2>
+          <h2 className="text-base/7 font-semibold text-[#017eff]">
+            {language === 'en' ? `Choose your ride` : `Escolha o seu serviço`}
+            </h2>
           <p className="ride-p mb-5 mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-            A wide array of service classes
+            {language === 'en' ? `Affordable prices for our service classes` : `Preços acessíveis para as nossas classes de serviço`}
           </p>
           {/* <p className="mt-6 text-lg/8 text-gray-600">
             Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
@@ -22,35 +24,39 @@ const RideDiv = () => {
             <div className="carousel overflow-x-auto carousel-center bg-['#017eff']  max-w-full space-x-6 p-4">
                 
                 <div className="carousel-item">
-                    <RideCard 
-                        carPic={SEDAN}
-                        carTitle='Toyota Sedan'
-                        carPersonCapacity='4'
-                        carBagCapacity='2'
-                        carPricing='50'
-                        carDescription='50 MTn'
+                    <RideCard
+                        language={language}
+                        carPic={BASE}
+                        carTitle='Moozi'
+                        carPersonCapacity='1 - 5'
+                        carBagCapacity='0 - 3'
+                        carPricing='75,00'
+                        carDescription='75,00 MTn'
                     />
                 </div>
                 <div className="carousel-item">
                     <RideCard 
-                    carPic={SUV}
-                    carTitle='Toyota SUV'
-                    carPersonCapacity='5'
-                    carBagCapacity='3'
-                    carPricing='100'
+                    language={language}
+                    carPic={DELUXE}
+                    carTitle='Deluxe'
+                    carPersonCapacity='1 - 5'
+                    carBagCapacity='0 - 4'
+                    carPricing='85,00'
                     carDescription='Description of car'
                     />
                 </div>
                 <div className="carousel-item">
                     <RideCard 
-                        carPic={SUVLUX}
-                        carTitle='Toyota Luxury SUV'
-                        carPersonCapacity='6'
-                        carBagCapacity='3'
-                        carPricing='150'
-                        carDescription='Description'
+                    language={language}
+                    carPic={DELUXE}
+                    carTitle='Rental'
+                    carPersonCapacity='1 - 5'
+                    carBagCapacity='0 - 4'
+                    carPricing='85,00'
+                    carDescription='Description of car'
                     />
                 </div>
+                
                 
                 
             </div>

@@ -3,18 +3,27 @@ import './Navbar.css';
 
 import ICON_WHITEBG from '../../assets/logo-white-letters.png';
 import LANGUAGE_EN from '../../assets/button-icons/english.svg';
+import LANGUAGE_PT from '../../assets/button-icons/portuguese.svg';
+import EN_LANG from '../../assets/button-icons/en_lang.png';
+import PT_LANG from '../../assets/button-icons/pt_lang.png';
 import SUPPORT_ICON from '../../assets/button-icons/support-icon.svg';
 import { GlobeEuropeAfricaIcon } from '@heroicons/react/24/outline';
 import { ICON_SIZE } from '../../utils/Constants';
 import { Downloads } from '../Downloads';
 import { Link } from 'react-router-dom';
 
+import { useLanguage } from '../../context/LanguageContext';
+
 export const Navbar = () => {
 
     const [lastScrollY, setLastScrollY] = useState(0);
     const [navbarVisible, setNavbarVisible] = useState(true);
+    const { language, changeLanguage } = useLanguage();
 
     const SCROLL_THRESHOLD = 120;
+
+    
+
 
     // Function to handle scroll direction
     const handleScroll = () => {
@@ -48,33 +57,38 @@ export const Navbar = () => {
 
                 <div className="navbar-left">
                     <div className="navbar-logo-container">
-                        <img src={ICON_WHITEBG} ></img>
+                        <Link><img src={ICON_WHITEBG} ></img></Link>
                     </div>
 
                     <div className="navbar-links-container">
                         <div className="">
-                            <div tabIndex={0} className="navbar-link-button navbar-button-hover">Ride</div>
+                            <div tabIndex={0} className="navbar-link-button navbar-button-hover">
+                            {language === 'en' ? `Client` : `Cliente`}
+                                </div>
                             
                         </div>
 
                         <div className="dropdown dropdown-hover">
-                            <div tabIndex={0} className="navbar-link-button navbar-button-hover">Drive</div>
+                            <div tabIndex={0} className="navbar-link-button navbar-button-hover">
+                            {language === 'en' ? `Driver` : `Condutor`}
+                                </div>
                             <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 2</a></li>
+                                <li><a>{language === 'en' ? `Drive with Moozi` : `Conduz com a Moozi`}</a></li>
+                                <li><a>{language === 'en' ? `Vehicle Category` : `Categoria de Veículos`}</a></li>
                             </ul>
                         </div>
 
                         <div className="dropdown dropdown-hover ">
                             <div tabIndex={0} className="navbar-link-button navbar-button-hover">About</div>
                             <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 2</a></li>
+                                <li><a>{language === 'en' ? `Who we Are` : `Quem Somos`}</a></li>
+                                <li><a>{language === 'en' ? `Corporation Account` : `Conta Corporativa`}</a></li>
                             </ul>
                         </div>
 
                         <div className="">
-                            <div tabIndex={0} className="navbar-link-button navbar-button-hover">Download the App</div>
+                            <div tabIndex={0} className="navbar-link-button navbar-button-hover">
+                            {language === 'en' ? `Download the App` : `Baixe o Aplicativo`}</div>
                             
                         </div>
 
@@ -86,11 +100,17 @@ export const Navbar = () => {
                         <div className='navbar-language-select'>
                             <div className="dropdown dropdown-bottom ">
                                 <div tabIndex={0} className="language-button navbar-button-hover">
-                                    <img  className="icon" src={LANGUAGE_EN} width={ICON_SIZE} />
+                                    <img  className="icon" src={language == 'en' ? LANGUAGE_EN : LANGUAGE_PT } width={ICON_SIZE} />
                                 </div>
-                                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-40 p-2 shadow-sm">
-                                    <li><a>Item 1</a></li>
-                                    <li><a>Item 2</a></li>
+                                <ul tabIndex={0} className="lang-list dropdown-content menu bg-base-100 rounded-box z-1 w-40 p-2 shadow-sm">
+                                    <li onClick={() => changeLanguage('pt')}><a> 
+                                            <img className="lang_icon" src={PT_LANG}/>
+                                            <p className='lang-list-p'>Português</p>
+                                        </a></li>
+                                    <li onClick={() => changeLanguage('en')}><a> 
+                                            <img className="lang_icon" src={EN_LANG} />
+                                            <p className='lang-list-p'>English</p>
+                                        </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -99,7 +119,7 @@ export const Navbar = () => {
                             <div className="support-contact navbar-button-hover">
                                 <img className="icon"  src={SUPPORT_ICON} width={ICON_SIZE}/>
                                 <div>
-                                    <p>Support</p>
+                                    <p>{language === 'en' ? `Support` : `Suporte`}</p>
                                 </div>
                             </div>
                         </div>
@@ -148,9 +168,14 @@ export const Navbar = () => {
                     <details>
                     <summary><GlobeEuropeAfricaIcon aria-hidden="true" className="size-8 text-white" /> </summary>
                     <ul className="text-black rounded-2xl w-40
-                    h-20 right-[0.01rem]">
-                        <li><a>English</a></li>
-                        <li><a>Português</a></li>
+                    h-24 right-[0.01rem]">
+                        <li  onClick={() => changeLanguage('pt')}><a>
+                            <img className="lang_icon" src={PT_LANG} width={28} />
+                            <p className='lang-list-p'>Português</p></a></li>
+                        <li  onClick={() => changeLanguage('en')}><a>
+                            <img className="lang_icon" src={EN_LANG} width={28} />
+                            <p className='lang-list-p'>English
+                        </p></a></li>
                     </ul>
                     </details>
                 </li>
@@ -174,8 +199,8 @@ export const Navbar = () => {
 
             {/* Sidebar Links */}
             <ul className="text-3xl py-4">
-                <li className="py-4"><a href="#">Ride</a></li>
-                <li><a href="#">Drive</a></li>
+                <li className="py-4"><a href="#">{language === 'en' ? `Client` : `Cliente`}</a></li>
+                <li><a href="#">{language === 'en' ? `Driver` : `Condutor`}</a></li>
             </ul>
 
             {/* Push this div to the bottom */}
@@ -185,7 +210,7 @@ export const Navbar = () => {
                 <div className="support-contact navbar-button-hover">
                                 <img className="icon"  src={SUPPORT_ICON} width={ICON_SIZE}/>
                                 <div>
-                                    <p>Support</p>
+                                    <p>{language === 'en' ? `Support` : `Suporte`}</p>
                                 </div>
                             </div>
                     </Link>

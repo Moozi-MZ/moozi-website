@@ -8,14 +8,17 @@ import './App.css';
 // Components
 import { Home } from './pages/home/Home';
 import { BookingPage } from './pages/booking_page/BookingPage';
-import Lenis from '@studio-freight/lenis';
+// import Lenis from '@studio-freight/lenis';
 import SmoothScroll from './components/SmoothScroll';
 import { Test } from './Test';
+import { useLanguage } from './context/LanguageContext';
 
 
 
 
 function App() {
+
+  const { language } = useLanguage();
   
 
   // useEffect(() => {
@@ -44,6 +47,22 @@ function App() {
   // }, []);
 
   
+      const targetH5 = document.querySelector('.web-booking-wrapper .iframe-header h5');
+
+      if (targetH5) {
+        if(language === 'en') {
+          targetH5.textContent = 'Book a Ride'; // or innerText, both work
+        }
+        else if(language === 'pt') {
+          targetH5.textContent = 'Marcar Viagem'; // or innerText, both work
+        }
+       
+      }; // check every 300ms
+
+
+
+
+  
 
   return (
     <>
@@ -51,7 +70,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         {/* <Route path='/booking-page' element={<BookingPage />} /> */}
-        {/* <Route path='/test' element={<Test />} /> */}
+        <Route path='/test' element={<Test />} />
       </Routes>
 
     {/* </SmoothScroll> */}

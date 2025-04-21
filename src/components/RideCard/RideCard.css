@@ -19,6 +19,7 @@
 }
 .person-count, .bag-count {
     display: flex;
+    gap: 5px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -26,10 +27,10 @@
     cursor:default;
 
     font-weight: bold;
-    width: 58px;
-    height: 57px;
+    width: 90px;
+    height: 47px;
     
-    border-radius:50%;
+    border-radius:40px;
     padding: 10px;
     /* border: 2px solid #017eff; */
     background-color: #9fcfff;

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import ANDROID from '../assets/download-android.webp'
 import IPHONE from '../assets/download-iphone.png';
 
-export const Downloads = () => {
+export const Downloads = ({language}) => {
   return (
     
     <div className='downloads-container'>
