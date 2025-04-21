@@ -160,7 +160,7 @@ export const Navbar = () => {
 
         {/* Navbar Title */}
         <div className="flex-1">
-          <a className=" text-2xl mx-2 font-bold text-white">Moozi</a>
+          <Link to='/moozi-website/' className=" text-2xl mx-2 font-bold text-white">Moozi</Link>
         </div>
         <div className="flex-none text-white">
             <ul className="menu menu-horizontal">
@@ -198,6 +198,7 @@ export const Navbar = () => {
 
             {/* Sidebar Links */}
             <ul className="text-3xl py-4">
+                <li className="pt-4"><Link to="/moozi-website/">{language === 'en' ? `Home` : `Página Inicial`}</Link></li>
                 <li className="py-4"><Link to="">{language === 'en' ? `Client` : `Cliente`}</Link></li>
                 <li><Link to="">{language === 'en' ? `Driver` : `Condutor`}</Link></li>
                 <li className='py-4'><Link to='/moozi-website/about'>{language === 'en' ? `About Us` : `Sobre Nós`}</Link></li>

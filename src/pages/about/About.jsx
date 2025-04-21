@@ -12,7 +12,7 @@ const About = () => {
 
     <div className="min-h-screen bg-white text-black py-10">
       <div className="max-w-4xl mx-auto px-6">
-        <h1 className="text-3xl font-bold text-center text-[#0080e2] mb-6">
+        <h1 className="text-3xl font-bold text-center text-[#0080e2] mb-12 mt-18 sm:mt-0">
           {language === 'en' ? 'Moozi – Complete Corporate Identity' : 'Moozi – Identidade Corporativa Completa'}
         </h1>
         
