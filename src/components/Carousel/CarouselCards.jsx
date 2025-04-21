@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 
 const CarouselCards = ({ cards }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'center', loop: false });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'start', loop: false });
 
   const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
@@ -11,7 +11,7 @@ const CarouselCards = ({ cards }) => {
     <div className="w-[100%] mx-auto space-y-4 carousel-container">
       {/* Carousel Viewport */}
       <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex items-center justify-center gap-4 h-135 mx-auto">
+        <div className="flex items-centergap-4 h-135 mx-auto">
           {cards.map((card, index) => (
             <div
               className="min-w-[350px] max-w-[350px] shrink-0 px-4"
@@ -35,10 +35,10 @@ const CarouselCards = ({ cards }) => {
       </div>
 
       {/* Controls */}
-      {/* <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4">
         <button onClick={scrollPrev} className="btn btn-outline btn-sm">❮</button>
         <button onClick={scrollNext} className="btn btn-outline btn-sm">❯</button>
-      </div> */}
+      </div>
     </div>
   );
 };
