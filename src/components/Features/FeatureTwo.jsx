@@ -6,7 +6,7 @@ import './FeatureTwo.css'
 
 export const FeatureTwo = ({language}) => {
     return (
-      <div className="bg-gray-50 py-24 sm:py-20">
+      <div className="bg-gray-50 py-24 sm:py-15">
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <h2 className="text-center text-base/7 font-semibold text-[#017eff]">
             {language === 'en' ? `Download our App` : `Baixe o nosso Aplicativo`}

@@ -79,7 +79,7 @@ export const Footer = ({language}) => {
                     <Downloads />
                   </nav>
                 </footer>
-                <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 mb-20 sm:mb-10">
+                <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 mb-20 sm:mb-15">
                   <nav className="md:place-self-center mx-auto md:justify-self-center">
                     <div className="grid grid-flow-col gap-4 ">
                     <div className='footer-socials-box'>

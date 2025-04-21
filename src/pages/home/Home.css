@@ -59,8 +59,8 @@
     /* font-family: 'Arial Rounded MT'; */
     padding-bottom: 3.5rem;
 
-    
-    background: linear-gradient(180deg, #fff,#fff,#0080e2 , #0080e2);
+    background: #fff;
+    /* background: linear-gradient(180deg, #fff,#fff,#0080e2 , #0080e2); */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -140,6 +140,46 @@ body button .btn .btn-primary {
     height: 90% !important;
 }
 
+.button-to-book {
+    display:flex;
+    flex-direction: row;
+    width: 80%;
+    height: 75px;
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid #0080e2;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    
+
+    position: relative;
+
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    .button-to-book {
+        display:flex;
+        flex-direction: row;
+        width: 300px;
+        height: 75px;
+        cursor: pointer;
+        padding: 5px;
+        border: 2px solid #0080e2;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        
+    
+        position: relative;
+    
+        transition: background-color 0.3s ease;
+    }
+}
+
 
 @media (max-width: 768px) {
 
@@ -171,6 +211,10 @@ body button .btn .btn-primary {
 
 }
 
+.hero-content-mobile {
+    margin: 0 auto;
+}
+
 .hero-h1 {
     font-size: 45px;
     text-align: center;
@@ -196,6 +240,8 @@ body button .btn .btn-primary {
 .ride-caption {
     text-align: center;
 }
+
+
 
 
 /* SCRIPT */

@@ -27,3 +27,15 @@
     width: 180px;
     min-width: 120px ;
 }
+
+@media (max-width: 1000px) {
+    .downloads-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .android, .iphone {
+        /* width: 100%; */
+        /* min-width: 100%; */
+    }
+    
+}

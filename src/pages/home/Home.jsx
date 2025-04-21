@@ -57,8 +57,10 @@ export const Home = () => {
                 <div className="hero-book-a-ride">
                     <h1 className='hero-h1'>
                         {language === 'en' ? 
-                            `Move Anywhere, Anytime, with Moozi :)` : 
-                            `Daqui pra lá, sem stress com Moozi :D` }
+                            `Move Anywhere, Anytime, with Moozi :)` : <>
+                            
+                            Daqui pra lá sem stress com <br/> Moozi :D   
+                            </> }
                     </h1>
                     <div onClick={HandleBookARideClick} className="button-to-book">
                         <p> {language === 'en' ? 

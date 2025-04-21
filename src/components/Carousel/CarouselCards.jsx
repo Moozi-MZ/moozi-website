@@ -8,10 +8,10 @@ const CarouselCards = ({ cards }) => {
   const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
 
   return (
-    <div className="w-[100%] mx-auto space-y-4 carousel-container">
+    <div className="w-[100%] mx-auto space-y-1 carousel-container">
       {/* Carousel Viewport */}
       <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex items-centergap-4 h-135 mx-auto">
+        <div className="flex items-center gap-4 h-125 mx-auto">
           {cards.map((card, index) => (
             <div
               className="min-w-[350px] max-w-[350px] shrink-0 px-4"
@@ -35,7 +35,7 @@ const CarouselCards = ({ cards }) => {
       </div>
 
       {/* Controls */}
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4 pb-10">
         <button onClick={scrollPrev} className="btn btn-outline btn-sm">❮</button>
         <button onClick={scrollNext} className="btn btn-outline btn-sm">❯</button>
       </div>
