@@ -13,6 +13,10 @@ import SmoothScroll from './components/SmoothScroll';
 import { Test } from './Test';
 import { useLanguage } from './context/LanguageContext';
 import About from './pages/about/About';
+import ClientPage from './pages/client/ClientPage';
+import DriverPage from './pages/driver/DriverPage';
+import NotFound from './pages/notfound/NotFound';
+import VehicleCategory from './pages/driver/VehicleCategory';
 
 function App() {
 
@@ -63,9 +67,20 @@ function App() {
     <>
     {/* <SmoothScroll > */}
       <Routes>
+      <Route path="/" element={<Navigate to="/moozi-website/home" />} />
       <Route path="/moozi-website/" element={<Navigate to="/moozi-website/home" />} />
       <Route path="/moozi-website/home" element={<Home />} />
+
+      <Route path="/moozi-website/client" element={<ClientPage />} />
+
+      <Route path="/moozi-website/driver" element={<DriverPage />} />
+      <Route path="/moozi-website/vehicle-category" element={<VehicleCategory />} />
+
       <Route path="/moozi-website/about" element={<About />} />
+
+
+      {/* 👇 Catch-all route goes at the end */}
+      <Route path="*" element={<NotFound />} />
       </Routes>
 
     {/* </SmoothScroll> */}

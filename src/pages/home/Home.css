@@ -2,6 +2,10 @@
     display: none;
 }
 
+.booking-map {
+    display: none !important;
+}
+
 .html {
     width: 100%;
     
@@ -137,6 +141,10 @@ body button .btn .btn-primary {
 
 .web-booking-wrapper {
     /* width: 100vw !important; */
+    height: 90% !important;
+}
+
+.ng-star-inserted {
     height: 90% !important;
 }
 

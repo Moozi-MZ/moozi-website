@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react';
 import { Navbar } from '../../components/Navbar/Navbar'
 import { useLanguage } from '../../context/LanguageContext'
 import { Footer } from '../../components/Footer/Footer';
 
 const About = () => {
     const { language } = useLanguage();
+
+    useEffect(() => {
+      // Scroll to the top of the page when the component mounts
+      window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

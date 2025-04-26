@@ -62,9 +62,11 @@ export const Navbar = () => {
 
                     <div className="navbar-links-container">
                         <div className="">
+                            <Link to='/moozi-website/client'>
                             <div tabIndex={0} className="navbar-link-button navbar-button-hover">
                             {language === 'en' ? `Client` : `Cliente`}
                                 </div>
+                            </Link>
                             
                         </div>
 
@@ -73,8 +75,8 @@ export const Navbar = () => {
                             {language === 'en' ? `Driver` : `Condutor`}
                                 </div>
                             <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                                <li><a>{language === 'en' ? `Drive with Moozi` : `Conduz com a Moozi`}</a></li>
-                                <li><a>{language === 'en' ? `Vehicle Category` : `Categoria de Veículos`}</a></li>
+                                <li><Link to='/moozi-website/driver'>{language === 'en' ? `Drive with Moozi` : `Conduz com a Moozi`}</Link></li>
+                                <li><Link to='/moozi-website/vehicle-category'>{language === 'en' ? `Vehicle Category` : `Categoria de Veículos`}</Link></li>
                             </ul>
                         </div>
 
@@ -199,8 +201,8 @@ export const Navbar = () => {
             {/* Sidebar Links */}
             <ul className="text-3xl py-4">
                 <li className="pt-4"><Link to="/moozi-website/">{language === 'en' ? `Home` : `Página Inicial`}</Link></li>
-                <li className="py-4"><Link to="">{language === 'en' ? `Client` : `Cliente`}</Link></li>
-                <li><Link to="">{language === 'en' ? `Driver` : `Condutor`}</Link></li>
+                <li className="py-4"><Link to="/moozi-website/client">{language === 'en' ? `Client` : `Cliente`}</Link></li>
+                <li><Link to="/moozi-website/driver">{language === 'en' ? `Driver` : `Condutor`}</Link></li>
                 <li className='py-4'><Link to='/moozi-website/about'>{language === 'en' ? `About Us` : `Sobre Nós`}</Link></li>
             </ul>
 

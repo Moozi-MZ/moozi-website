@@ -22,19 +22,19 @@ export const Footer = ({language}) => {
                   {language === 'en' ? (
                     <>
                       <h6 className="footer-title">Services</h6>
-                      <a className="link link-hover">Client</a>
-                      <a className="link link-hover">Driver</a>
-                      <a className="link link-hover">Retnals</a>
-                      <a className="link link-hover">Advertisement</a>
+                      <Link to='/moozi-website/client' className="link link-hover">Client</Link>
+                      <Link to='/moozi-website/driver'  className="link link-hover">Driver</Link>
+                      {/* <a className="link link-hover">Rentals</a> */}
+                      {/* <a className="link link-hover">Advertisement</a> */}
                     </>
                     
                   ) : (
                     <>
                     <h6 className="footer-title">Serviços</h6>
-                    <a className="link link-hover">Cliente</a>
-                    <a className="link link-hover">Condutor</a>
-                    <a className="link link-hover">Rentals</a>
-                    <a className="link link-hover">Publicidade</a>
+                    <Link to='/moozi-website/client' className="link link-hover">Cliente</Link>
+                    <Link to='/moozi-website/driver' className="link link-hover">Condutor</Link>
+                    {/* <a className="link link-hover">Rentals</a> */}
+                    {/* <a className="link link-hover">Publicidade</a> */}
                   </>
                   )}
                   </nav>
@@ -42,7 +42,7 @@ export const Footer = ({language}) => {
                   {language === 'en' ? (
                     <>
                       <h6 className="footer-title">Company</h6>
-                    <a className="link link-hover">About us</a>
+                    <Link to='/moozi-website/about' className="link link-hover">About us</Link>
                     <a className="link link-hover">Contact</a>
                     <a className="link link-hover">Jobs</a>
                     </>
@@ -50,7 +50,7 @@ export const Footer = ({language}) => {
                   ) : (
                     <>
                     <h6 className="footer-title">Empresa</h6>
-                    <a className="link link-hover">Sobre nós</a>
+                    <Link to='/moozi-website/about' className="link link-hover">Sobre nós</Link>
                     <a className="link link-hover">Contacto</a>
                     <a className="link link-hover">Carreiras</a>
                   </>
