@@ -33,6 +33,7 @@ export const Footer = ({language}) => {
                     <h6 className="footer-title">Serviços</h6>
                     <Link to='/moozi-website/client' className="link link-hover">Cliente</Link>
                     <Link to='/moozi-website/driver' className="link link-hover">Condutor</Link>
+                    <Link to='/moozi-website/faq' className="link link-hover">FAQs</Link>
                     {/* <a className="link link-hover">Rentals</a> */}
                     {/* <a className="link link-hover">Publicidade</a> */}
                   </>

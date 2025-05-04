@@ -91,9 +91,15 @@ Junta-te à Moozi e começa hoje a transformar o teu dia a dia.`}
   </section>
 
   {/* Vehicle Categories */}
-  <Link className='vehicle-category-link' to='/moozi-website/vehicle-category'>
-    {language === 'en' ? `Vehicle Category` : `Categoria de Veículos` } 
-  </Link>
+  <Link to='/moozi-website/vehicle-category' className="driver-slide-container max-w-70 relative flex items-center px-6 py-2 rounded-full bg-[#0080e2] text-black font-medium overflow-hidden transition-all hover:brightness-105">
+  <span className=" driver-slide absolute left-2 h-8 flex items-center justify-center bg-white text-white rounded-full">
+  </span>
+   <span className='text-white'>→</span>
+  <span className="ml-8 text-white">
+    {language == 'en' ? `Vehicle Category` : `Categoria de Veículos`}
+  </span>
+</Link>
+
 
 
 </div>

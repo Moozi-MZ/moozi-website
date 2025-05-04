@@ -81,10 +81,12 @@ export const Navbar = () => {
                         </div>
 
                         <div className="dropdown dropdown-hover ">
-                            <div tabIndex={0} className="navbar-link-button navbar-button-hover">About</div>
+                            <div tabIndex={0} className="navbar-link-button navbar-button-hover">
+                                {language == 'en' ? `About Us` : `Sobre Nós`}
+                            </div>
                             <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                                 <li><Link to='/moozi-website/about'>{language === 'en' ? `Who we Are` : `Quem Somos`}</Link></li>
-                                <li><a>{language === 'en' ? `Corporation Account` : `Conta Corporativa`}</a></li>
+                                <li><Link to='/moozi-website/corporate'>{language === 'en' ? `Corporation Account` : `Conta Corporativa`}</Link></li>
                             </ul>
                         </div>
 
@@ -106,11 +108,11 @@ export const Navbar = () => {
                                 </div>
                                 <ul tabIndex={0} className="lang-list dropdown-content menu bg-base-100 rounded-box z-1 w-40 p-2 shadow-sm">
                                     <li onClick={() => changeLanguage('pt')}><a> 
-                                            <img className="lang_icon" src={PT_LANG}/>
+                                            {/* <img className="lang_icon" src={PT_LANG}/> */}
                                             <p className='lang-list-p'>Português</p>
                                         </a></li>
                                     <li onClick={() => changeLanguage('en')}><a> 
-                                            <img className="lang_icon" src={EN_LANG} />
+                                            {/* <img className="lang_icon" src={EN_LANG} /> */}
                                             <p className='lang-list-p'>English</p>
                                         </a></li>
                                 </ul>

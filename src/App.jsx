@@ -17,6 +17,8 @@ import ClientPage from './pages/client/ClientPage';
 import DriverPage from './pages/driver/DriverPage';
 import NotFound from './pages/notfound/NotFound';
 import VehicleCategory from './pages/driver/VehicleCategory';
+import Corporate from './pages/about/Corporate';
+import FAQ from './pages/about/FAQ';
 
 function App() {
 
@@ -76,7 +78,10 @@ function App() {
       <Route path="/moozi-website/driver" element={<DriverPage />} />
       <Route path="/moozi-website/vehicle-category" element={<VehicleCategory />} />
 
+      <Route path="/moozi-website/faq" element={<FAQ />} />
+
       <Route path="/moozi-website/about" element={<About />} />
+      <Route path="/moozi-website/corporate" element={<Corporate />} />
 
 
       {/* 👇 Catch-all route goes at the end */}

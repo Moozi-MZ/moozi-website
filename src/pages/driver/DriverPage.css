@@ -8,6 +8,20 @@
 
 }
 
+.driver-slide {
+    width: 0;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.driver-slide-container:hover .driver-slide {
+    width: 94% !important;    
+}
+
+.driver-slide-container:hover span {
+    color: #000 !important
+}
+
 @media (max-width: 768px) {
 
     .driver-container {
