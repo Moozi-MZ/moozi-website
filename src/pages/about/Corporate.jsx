@@ -68,7 +68,7 @@ const Corporate = () => {
             <div className="card-body">
               <h2 className="card-title text-[#0080e2]">{card.title}</h2>
               <p className="whitespace-pre-line">{card.description}</p>
-              {card.title === (language === 'en' ? 'Request Account' : 'Solicitar Conta') && (
+              {/* {card.title === (language === 'en' ? 'Request Account' : 'Solicitar Conta') && (
                 <div className="card-actions mt-4">
                   <button className="btn bg-[#0080e2] text-white">
                     {language === 'en' ? 'Create Corporate Account' : 'Criar Conta Corporativa'}
@@ -77,7 +77,7 @@ const Corporate = () => {
                     {language === 'en' ? 'Request Demo' : 'Solicitar Demonstração'}
                   </button>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         ))}
