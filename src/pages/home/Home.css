@@ -191,6 +191,9 @@ body button .btn .btn-primary {
 
 @media (max-width: 768px) {
 
+.contact-support-content {
+    left: 15px;
+}
 
 .hero-container, .alt-hero-container, .carousel-container {
     display: none;

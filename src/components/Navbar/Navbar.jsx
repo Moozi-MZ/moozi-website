@@ -124,6 +124,21 @@ export const Navbar = () => {
                                 <img className="icon"  src={SUPPORT_ICON} width={ICON_SIZE}/>
                                 <div>
                                     <p>{language === 'en' ? `Support` : `Suporte`}</p>
+                                    <div className='navbar-contact-support-content'>
+                                        {language == 'en' ? (
+                                            <>
+                                            <p className='contact-support-text'> For Support and Personalized Assistance, contact us:</p>
+                                            <p className='contact-support-text'>📞 +258 84 258 0258</p>
+                                            <p className='contact-support-text'>📧 Suporte@moozi.co.mz</p>
+                                            </>
+                                        ) : (
+                                            <>
+                                            <p className='contact-support-text'> Para Suporte e Assistência Personalizada, entre em contato conosco:</p>
+                                            <p className='contact-support-text'>📞 +258 84 258 0258</p>
+                                            <p className='contact-support-text'>📧 Suporte@moozi.co.mz</p>
+                                            </>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         </div>

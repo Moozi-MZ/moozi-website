@@ -24,6 +24,7 @@ export const Footer = ({language}) => {
                       <h6 className="footer-title">Services</h6>
                       <Link to='/moozi-website/client' className="link link-hover">Client</Link>
                       <Link to='/moozi-website/driver'  className="link link-hover">Driver</Link>
+                      <Link to='/moozi-website/faq' className="link link-hover">FAQs</Link>
                       {/* <a className="link link-hover">Rentals</a> */}
                       {/* <a className="link link-hover">Advertisement</a> */}
                     </>
@@ -44,16 +45,30 @@ export const Footer = ({language}) => {
                     <>
                       <h6 className="footer-title">Company</h6>
                     <Link to='/moozi-website/about' className="link link-hover">About us</Link>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
+                    <div className="link link-hover contact-support">
+                      Contact
+                      <div className='contact-support-content'>
+                        <p className='contact-support-text'> For Support and Personalized Assistance, contact us:</p>
+                        <p className='contact-support-text'>📞 +258 84 258 0258</p>
+                        <p className='contact-support-text'>📧 Suporte@moozi.co.mz</p>
+                      </div>
+                    </div>
+                    {/* <a className="link link-hover">Jobs</a> */}
                     </>
                     
                   ) : (
                     <>
                     <h6 className="footer-title">Empresa</h6>
                     <Link to='/moozi-website/about' className="link link-hover">Sobre nós</Link>
-                    <a className="link link-hover">Contacto</a>
-                    <a className="link link-hover">Carreiras</a>
+                    <div className="link link-hover contact-support">
+                      Contacto
+                      <div className='contact-support-content'>
+                        <p className='contact-support-text'> Para Suporte e Apoio Personalizado, contacte-nos:</p>
+                        <p className='contact-support-text'>📞 +258 84 258 0258</p>
+                        <p className='contact-support-text'>📧 Suporte@moozi.co.mz</p>
+                      </div>
+                    </div>
+                    {/* <a className="link link-hover">Carreiras</a> */}
                   </>
                   )}
                   </nav>
@@ -61,16 +76,16 @@ export const Footer = ({language}) => {
                   {language === 'en' ? (
                     <>
                     <h6 className="footer-title">Legal</h6>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
+                    <Link to='/moozi-website/terms-and-conditions' className="link link-hover">Terms of use</Link>
+                    <Link to='/moozi-website/privacypolicy' className="link link-hover">Privacy policy</Link>
                     {/* <a className="link link-hover">Cookie policy</a> */}
                     </>
                     
                   ) : (
                     <>
                     <h6 className="footer-title">Legal</h6>
-                    <a className="link link-hover">Termos de Utilização</a>
-                    <a className="link link-hover">Política de Privacidade</a>
+                    <Link to='/moozi-website/terms-and-conditions' className="link link-hover">Termos de Utilização</Link>
+                    <Link to='/moozi-website/privacypolicy' className="link link-hover">Política de Privacidade</Link>
                     {/* <a className="link link-hover">Política de Cookies</a> */}
 
                   </>
@@ -97,7 +112,7 @@ export const Footer = ({language}) => {
                       <div className='copyright mx-auto'>
                                     <p className='copyright-text'>Copyright © 2025 - Moozi, Lda</p>
                                     <p className='copyright-credit'>
-                                        Designed by&nbsp; <Link to='https://leonardobloom.github.io/portfolio-website/'> <span><img src={ICON} alt=""/></span></Link>
+                                        Designed by&nbsp; <Link to='https://leonardobloom.github.io/portfolio-website/'> <span><img src={ICON} alt="" title='Leonardo Colaço'/></span></Link>
                                     </p>
                                     
                                 </div>

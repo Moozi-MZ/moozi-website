@@ -19,6 +19,8 @@ import NotFound from './pages/notfound/NotFound';
 import VehicleCategory from './pages/driver/VehicleCategory';
 import Corporate from './pages/about/Corporate';
 import FAQ from './pages/about/FAQ';
+import PrivacyPolicy from './pages/legal/PrivacyPolicy';
+import TermsConditions from './pages/legal/TermsConditions';
 
 function App() {
 
@@ -82,6 +84,9 @@ function App() {
 
       <Route path="/moozi-website/about" element={<About />} />
       <Route path="/moozi-website/corporate" element={<Corporate />} />
+
+      <Route path="/moozi-website/privacypolicy" element={<PrivacyPolicy />} />
+      <Route path="/moozi-website/terms-and-conditions" element={<TermsConditions />} />
 
 
       {/* 👇 Catch-all route goes at the end */}

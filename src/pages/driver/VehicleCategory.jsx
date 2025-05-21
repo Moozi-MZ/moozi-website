@@ -7,7 +7,7 @@ import './VehicleCategory.css';
 
 const VehicleCategory = () => {
 
-    const language = useLanguage();
+    const {language} = useLanguage();
 
   return (
     <>
@@ -37,7 +37,7 @@ const VehicleCategory = () => {
         </thead>
         <tbody>
           <tr>
-            <td>Classic / Clássico</td>
+            <td>Moozi</td>
             <td>
               {language === 'en'
                 ? 'Economical vehicles for daily use.'
@@ -52,7 +52,7 @@ const VehicleCategory = () => {
                 ? 'Comfortable vehicles with A/C and extra space.'
                 : 'Veículos confortáveis, com A/C e espaço extra.'}
             </td>
-            <td>Toyota Corolla, Mazda Verisa, Hyundai Accent</td>
+            <td>Toyota Corolla, Mazda Verisa, Mazda Axela</td>
           </tr>
           <tr>
             <td>Ela</td>

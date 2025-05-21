@@ -90,6 +90,18 @@ Junta-te à Moozi e começa hoje a transformar o teu dia a dia.`}
     </ul>
   </section>
 
+
+  <section className="space-y-4">
+    <h2 className="text-l font-semibold">
+      {language === 'en'
+        ? 'To become a Moozi driver contact:'
+        : 'Para se tornar um motorista Moozi, entre em contacto com:'}
+    </h2>
+    <ul className="list-disc list-inside space-y-1">
+      <u><a href='mailto:cadastro@moozi.co.mz'>Cadastro@moozi.co.mz</a></u>
+    </ul>
+  </section>
+
   {/* Vehicle Categories */}
   <Link to='/moozi-website/vehicle-category' className="driver-slide-container max-w-70 relative flex items-center px-6 py-2 rounded-full bg-[#0080e2] text-black font-medium overflow-hidden transition-all hover:brightness-105">
   <span className=" driver-slide absolute left-2 h-8 flex items-center justify-center bg-white text-white rounded-full">

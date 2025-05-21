@@ -11,7 +11,7 @@ export const Downloads = ({language}) => {
     <div className='downloads-container'>
         {/* <h1>Download our App</h1> */}
         <div className='downloads-content'>
-            <Link to=''>
+            <Link to='https://play.google.com/store/apps/details?id=com.moozi.user&pcampaignid=web_share'>
                 <div className='download-button'>
                     <img className="android" src={ANDROID} />
                 </div>

@@ -123,6 +123,27 @@
     margin: 0 auto;
 }
 
+.contact-support-content {
+    padding: 10px;
+    /* height: 70px; */
+    border-radius: 20px ;
+    position: absolute;
+    
+    opacity: 0;
+    color: #000;
+
+    transition: opacity 0.2s ease;
+
+}
+.contact-support:hover .contact-support-content {
+    
+    background-color: #fff;
+    opacity: 1;
+    
+}
+
+
+
 
 .copyright {
     width: 100%;

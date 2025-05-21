@@ -174,9 +174,27 @@ body {
     gap: 0.5rem;
 }
 
-.support-contact:hover {
+.navbar-contact-support-content {
+    position: absolute;
+    /* bottom: 5px; */
+    margin-top: 5px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0.5px solid #0080e2;
+    opacity: 0;
+    display: none;
 
+    color: #000;
+
+    transition: opacity 0.2s ease;
 }
+.support-contact:hover .navbar-contact-support-content {
+    opacity: 1;
+    display: block;
+}
+
 
 @media (max-width: 768px) {
 
