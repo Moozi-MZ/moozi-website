@@ -3,6 +3,7 @@ import './RideDiv.css'
 import RideCard from '../RideCard/RideCard'
 import BASE from '../../assets/vehicles/moozi-base.svg'
 import DELUXE from '../../assets/vehicles/moozi-deluxe.svg';
+import RENTAL from '../../assets/vehicles/moozi-rental.jpg';
 // import SUVLUX from '../../assets/vehicles/SUV car-bro.svg';
 
 const RideDiv = ({language}) => {
@@ -32,6 +33,7 @@ const RideDiv = ({language}) => {
                         carBagCapacity='0 - 3'
                         carPricing='75,00'
                         carDescription='75,00 MTn'
+                        consulta={false}
                     />
                 </div>
                 <div className="carousel-item">
@@ -43,17 +45,19 @@ const RideDiv = ({language}) => {
                     carBagCapacity='0 - 4'
                     carPricing='85,00'
                     carDescription='Description of car'
+                    consulta={false}
                     />
                 </div>
                 <div className="carousel-item">
                     <RideCard 
                     language={language}
-                    carPic={DELUXE}
+                    carPic={RENTAL}
                     carTitle='Rental'
-                    carPersonCapacity='1 - 5'
-                    carBagCapacity='0 - 4'
-                    carPricing='85,00'
+                    carPersonCapacity='1 - 7'
+                    carBagCapacity='0 - 5'
+                    carPricing={language === 'en' ? 'Upon request' : 'Sob Consulta'}
                     carDescription='Description of car'
+                    consulta={true}
                     />
                 </div>
                 

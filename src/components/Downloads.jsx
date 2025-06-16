@@ -17,7 +17,7 @@ export const Downloads = ({language}) => {
                 </div>
             </Link>
 
-            <Link to=''>
+            <Link to='https://apps.apple.com/ee/app/moozi-app/id6744141000'>
                 <div className="download-button">
                     <img className="iphone" src={IPHONE} />
                 </div>

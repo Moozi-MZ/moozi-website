@@ -46,6 +46,18 @@ export const Navbar = () => {
         };
     }, [lastScrollY]);
 
+    const handleRedirect = () => {
+    const userAgent = navigator.userAgent.toLowerCase();
+
+    if (userAgent.includes("android")) {
+      window.open('https://play.google.com/store/apps/details?id=com.moozi.user&pcampaignid=web_share', '_blank');
+    } else if (/iphone|ipad|ipod/.test(userAgent)) {
+      window.open('https://apps.apple.com/ee/app/moozi-app/id6744141000', '_blank');
+    } else {
+        window.open('https://moozi.co.mz', '_blank');
+    }
+  };
+
 
 
   return (
@@ -91,7 +103,7 @@ export const Navbar = () => {
                         </div>
 
                         <div className="">
-                            <div tabIndex={0} className="navbar-link-button navbar-button-hover">
+                            <div tabIndex={0} className="navbar-link-button navbar-button-hover" onClick={handleRedirect}>
                             {language === 'en' ? `Download the App` : `Baixe o Aplicativo`}</div>
                             
                         </div>

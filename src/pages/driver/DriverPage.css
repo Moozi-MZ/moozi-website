@@ -8,6 +8,20 @@
 
 }
 
+.moozi-driver-button {
+    width: 190px;
+    border: 2px solid #0080e2;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+    .moozi-driver-button h1 {}
+.moozi-driver-button:hover {
+    cursor: pointer;
+    background-color: #0080e2;
+    color: white;
+}
+
 .driver-slide {
     width: 0;
     transition: width 0.3s ease;

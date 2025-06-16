@@ -10,6 +10,18 @@ const DriverPage = () => {
 
     const { language } = useLanguage();
 
+    const handleRedirect = () => {
+    const userAgent = navigator.userAgent.toLowerCase();
+
+    if (userAgent.includes("android")) {
+      window.open('https://play.google.com/store/apps/details?id=com.moozi.driver', '_blank');
+    } else if (/iphone|ipad|ipod/.test(userAgent)) {
+      window.open('https://apps.apple.com/ie/app/moozi-driver/id6743934988', '_blank');
+    } else {
+        window.open('https://moozi.co.mz', '_blank');
+    }
+  };
+
   return (
     <>
     <Navbar language={language} />
@@ -33,6 +45,10 @@ Join Moozi and start transforming your daily routine today.`
 Junta-te à Moozi e começa hoje a transformar o teu dia a dia.`}
     </p>
   </section>
+
+  <div className='moozi-driver-button' onClick={handleRedirect}>
+    <h1>Baixe o Moozi Driver</h1>
+  </div>
 
   {/* Requirements */}
   <section className="space-y-4">
@@ -101,6 +117,8 @@ Junta-te à Moozi e começa hoje a transformar o teu dia a dia.`}
       <u><a href='mailto:cadastro@moozi.co.mz'>Cadastro@moozi.co.mz</a></u>
     </ul>
   </section>
+
+  
 
   {/* Vehicle Categories */}
   <Link to='/moozi-website/vehicle-category' className="driver-slide-container max-w-70 relative flex items-center px-6 py-2 rounded-full bg-[#0080e2] text-black font-medium overflow-hidden transition-all hover:brightness-105">

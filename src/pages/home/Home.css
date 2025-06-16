@@ -141,7 +141,13 @@ body button .btn .btn-primary {
 
 .web-booking-wrapper {
     /* width: 100vw !important; */
-    height: 90% !important;
+    /* height: 90% !important; */
+    z-index: 9999 !important;
+}
+.web-booking-wrapper .hide {
+    /* width: 100vw !important; */
+   /* height: 300px !important; */
+    z-index: 2 !important;
 }
 
 .ng-star-inserted {

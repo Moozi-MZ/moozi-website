@@ -3,7 +3,15 @@
     /* margin: 40px auto; */
     /* background-color: #f9fafb;s */
     /* padding: 0px 30px 50px 0px; */
+    z-index: 5;
 
+}
+
+.web-booking-wrapper .hide {
+    /* width: 100vw !important; */
+    position: absolute !important;
+   
+    z-index: -1 !important;
 }
 .downloads-container h1 {
     text-align: center;

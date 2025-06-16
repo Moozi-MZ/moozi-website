@@ -3,7 +3,7 @@ import SEDAN from '../../assets/vehicles/sedan-car-animate.svg'
 import './RideCard.css';
 import { UserIcon, BriefcaseIcon } from '@heroicons/react/24/outline';
 
-const RideCard = ({language, carPic, carTitle, carDescription, carPersonCapacity, carBagCapacity, carPricing}) => {
+const RideCard = ({language, carPic, carTitle, carDescription, carPersonCapacity, carBagCapacity, carPricing, consulta}) => {
   return (
     <div className="card bg-base-100 w-80 shadow-sm">
         <figure className="px-10 pt-10">
@@ -25,7 +25,7 @@ const RideCard = ({language, carPic, carTitle, carDescription, carPersonCapacity
                 </div>
             </div>
             <p className='car-price'>{language === 'en' ? `Starting at: ` : `Desde: `} 
-                <b>{carPricing}</b> MTn</p>
+                <b>{carPricing}</b> {consulta ? `` : `Mtn`}</p>
             <div className="card-actions">
             {/* <button className="btn btn-primary">Buy Now</button> */}
             </div>
