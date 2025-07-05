@@ -76,7 +76,7 @@ function App() {
   }, 300); // check every 300ms
 
   return () => clearInterval(interval); // cleanup if component unmounts
-  }, [language]);
+  }, []);
       
     
 
@@ -84,7 +84,7 @@ function App() {
     <>
     {/* <SmoothScroll > */}
       <Routes>
-      <Route path="/" element={<Navigate to="/moozi-website/home" />} />
+      <Route path="/" element={<Navigate to="/moozi-website/" />} />
       <Route path="/moozi-website/" element={<Navigate to="/moozi-website/home" />} />
       <Route path="/moozi-website/home" element={<Home />} />
 
