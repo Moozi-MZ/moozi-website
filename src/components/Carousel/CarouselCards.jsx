@@ -23,16 +23,15 @@ const CarouselCards = ({ cards }) => {
     <>
       <div className="w-[100%] mx-auto h-750px space-y-1 carousel-container">
         {/* overflow hidden */}
-        <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex items-center gap-4 h-650px mx-0 ">
+        <div 
+        className="overflow-hidden" ref={emblaRef}>
             <Marquee
       autoFill={true}
       pauseOnHover={true}
       gradient={true}
       gradientWidth={50}
       direction='right'
-      className='marquee'
-    >
+      className="marquee overflow-hidden carousel-container" ref={emblaRef} >
             {cards.map((card, index) => (
               <div className='card-container h-650px py-5 px-2 '>
               <ReactCardFlip
@@ -72,8 +71,9 @@ const CarouselCards = ({ cards }) => {
 
             ))}
             </Marquee>
-          </div>
+          
         </div>
+        
 
         {/* Controls */}
         {/* <div className="flex justify-center my-10 gap-4 pb-10">

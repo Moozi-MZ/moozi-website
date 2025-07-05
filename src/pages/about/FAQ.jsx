@@ -2,10 +2,16 @@ import React from 'react'
 import { useLanguage } from '../../context/LanguageContext';
 import { Navbar } from '../../components/Navbar/Navbar';
 import { Footer } from '../../components/Footer/Footer';
+import driverImage from '../../assets/posts/driver.jpg';
 
 const FAQ = () => {
     
     const { language } = useLanguage();
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // or 'auto' if you don't want smooth
+    });
 
   return (
     <>
@@ -81,6 +87,12 @@ const FAQ = () => {
                 : 'Consulte o seu perfil em tempo real e veja o seu saldo crescer. Actualize o seu perfil e acompanhe os seus ganhos a qualquer momento!'}
             </li>
         </ul>
+        </div>
+
+        <div>
+            <img src={driverImage} 
+                // width={800}
+            ></img> 
         </div>
     </div>
 
