@@ -1,5 +1,5 @@
 import React from 'react'
-import DRIVER from '../../assets/illustrations/City driver-rafiki.svg'
+import DRIVER from '../../assets/posts/driver.jpg'
 
 export const DriverDiv = () => {
   return (

@@ -5,6 +5,11 @@
  
 }
 
+.card-wrapper:hover {
+    filter: brightness(0.6);
+    transition: filter 0.3s ease-in-out;
+}
+
 .card-face {
   position: absolute;
   top: 0;
@@ -20,3 +25,8 @@
   object-fit: cover;
   border-radius: 40px;
 }
+/* 
+.marquee {
+    display: flex;
+    gap: 10px;
+} */
