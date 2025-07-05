@@ -31,7 +31,7 @@ const CarouselCards = ({ cards }) => {
       gradient={true}
       gradientWidth={50}
       direction='right'
-      className="marquee overflow-hidden carousel-container" ref={emblaRef} >
+       >
             {cards.map((card, index) => (
               <div className='card-container h-650px py-5 px-2 '>
               <ReactCardFlip
