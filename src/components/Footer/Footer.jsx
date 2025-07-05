@@ -22,9 +22,9 @@ export const Footer = ({language}) => {
                   {language === 'en' ? (
                     <>
                       <h6 className="footer-title">Services</h6>
-                      <Link to='/moozi-website/client' className="link link-hover">Client</Link>
-                      <Link to='/moozi-website/driver'  className="link link-hover">Driver</Link>
-                      <Link to='/moozi-website/faq' className="link link-hover">FAQs</Link>
+                      <Link to='/client' className="link link-hover">Client</Link>
+                      <Link to='/driver'  className="link link-hover">Driver</Link>
+                      <Link to='/faq' className="link link-hover">FAQs</Link>
                       {/* <a className="link link-hover">Rentals</a> */}
                       {/* <a className="link link-hover">Advertisement</a> */}
                     </>
@@ -32,9 +32,9 @@ export const Footer = ({language}) => {
                   ) : (
                     <>
                     <h6 className="footer-title">Serviços</h6>
-                    <Link to='/moozi-website/client' className="link link-hover">Cliente</Link>
-                    <Link to='/moozi-website/driver' className="link link-hover">Condutor</Link>
-                    <Link to='/moozi-website/faq' className="link link-hover">FAQs</Link>
+                    <Link to='/client' className="link link-hover">Cliente</Link>
+                    <Link to='/driver' className="link link-hover">Condutor</Link>
+                    <Link to='/faq' className="link link-hover">FAQs</Link>
                     {/* <a className="link link-hover">Rentals</a> */}
                     {/* <a className="link link-hover">Publicidade</a> */}
                   </>
@@ -44,7 +44,7 @@ export const Footer = ({language}) => {
                   {language === 'en' ? (
                     <>
                       <h6 className="footer-title">Company</h6>
-                    <Link to='/moozi-website/about' className="link link-hover">About us</Link>
+                    <Link to='/about' className="link link-hover">About us</Link>
                     <div className="link link-hover contact-support">
                       Contact
                       <div className='contact-support-content'>
@@ -59,7 +59,7 @@ export const Footer = ({language}) => {
                   ) : (
                     <>
                     <h6 className="footer-title">Empresa</h6>
-                    <Link to='/moozi-website/about' className="link link-hover">Sobre nós</Link>
+                    <Link to='/about' className="link link-hover">Sobre nós</Link>
                     <div className="link link-hover contact-support">
                       Contacto
                       <div className='contact-support-content'>
@@ -76,16 +76,16 @@ export const Footer = ({language}) => {
                   {language === 'en' ? (
                     <>
                     <h6 className="footer-title">Legal</h6>
-                    <Link to='/moozi-website/terms-and-conditions' className="link link-hover">Terms of use</Link>
-                    <Link to='/moozi-website/privacypolicy' className="link link-hover">Privacy policy</Link>
+                    <Link to='/terms-and-conditions' className="link link-hover">Terms of use</Link>
+                    <Link to='/privacypolicy' className="link link-hover">Privacy policy</Link>
                     {/* <a className="link link-hover">Cookie policy</a> */}
                     </>
                     
                   ) : (
                     <>
                     <h6 className="footer-title">Legal</h6>
-                    <Link to='/moozi-website/terms-and-conditions' className="link link-hover">Termos de Utilização</Link>
-                    <Link to='/moozi-website/privacypolicy' className="link link-hover">Política de Privacidade</Link>
+                    <Link to='/terms-and-conditions' className="link link-hover">Termos de Utilização</Link>
+                    <Link to='/privacypolicy' className="link link-hover">Política de Privacidade</Link>
                     {/* <a className="link link-hover">Política de Cookies</a> */}
 
                   </>

@@ -18,7 +18,7 @@ const DriverPage = () => {
     } else if (/iphone|ipad|ipod/.test(userAgent)) {
       window.open('https://apps.apple.com/ie/app/moozi-driver/id6743934988', '_blank');
     } else {
-        window.open('https://moozi.co.mz', '_blank');
+        window.open('https://www.moozi.co.mz', '_blank');
     }
   };
 
@@ -121,7 +121,7 @@ Junta-te à Moozi e começa hoje a transformar o teu dia a dia.`}
   
 
   {/* Vehicle Categories */}
-  <Link to='/moozi-website/vehicle-category' className="driver-slide-container max-w-70 relative flex items-center px-6 py-2 rounded-full bg-[#0080e2] text-black font-medium overflow-hidden transition-all hover:brightness-105">
+  <Link to='/vehicle-category' className="driver-slide-container max-w-70 relative flex items-center px-6 py-2 rounded-full bg-[#0080e2] text-black font-medium overflow-hidden transition-all hover:brightness-105">
   <span className=" driver-slide absolute left-2 h-8 flex items-center justify-center bg-white text-white rounded-full">
   </span>
    <span className='text-white'>→</span>

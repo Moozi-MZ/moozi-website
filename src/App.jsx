@@ -84,22 +84,21 @@ function App() {
     <>
     {/* <SmoothScroll > */}
       <Routes>
-      <Route path="/" element={<Navigate to="/moozi-website/" />} />
-      <Route path="/moozi-website/" element={<Navigate to="/moozi-website/home" />} />
-      <Route path="/moozi-website/home" element={<Home />} />
+      <Route path="/" element={<Navigate to="/home" />} />
+      <Route path="/home" element={<Home />} />
 
-      <Route path="/moozi-website/client" element={<ClientPage />} />
+      <Route path="/client" element={<ClientPage />} />
 
-      <Route path="/moozi-website/driver" element={<DriverPage />} />
-      <Route path="/moozi-website/vehicle-category" element={<VehicleCategory />} />
+      <Route path="/driver" element={<DriverPage />} />
+      <Route path="/vehicle-category" element={<VehicleCategory />} />
 
-      <Route path="/moozi-website/faq" element={<FAQ />} />
+      <Route path="/faq" element={<FAQ />} />
 
-      <Route path="/moozi-website/about" element={<About />} />
-      <Route path="/moozi-website/corporate" element={<Corporate />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/corporate" element={<Corporate />} />
 
-      <Route path="/moozi-website/privacypolicy" element={<PrivacyPolicy />} />
-      <Route path="/moozi-website/terms-and-conditions" element={<TermsConditions />} />
+      <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+      <Route path="/terms-and-conditions" element={<TermsConditions />} />
 
 
       {/* 👇 Catch-all route goes at the end */}

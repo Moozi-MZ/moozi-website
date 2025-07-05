@@ -54,7 +54,7 @@ export const Navbar = () => {
     } else if (/iphone|ipad|ipod/.test(userAgent)) {
       window.open('https://apps.apple.com/ee/app/moozi-app/id6744141000', '_blank');
     } else {
-        window.open('https://moozi.co.mz', '_blank');
+        window.open('https://www.moozi.co.mz', '_blank');
     }
   };
 
@@ -69,12 +69,12 @@ export const Navbar = () => {
 
                 <div className="navbar-left">
                     <div className="navbar-logo-container">
-                        <Link to="/moozi-website/"><img src={ICON_WHITEBG} ></img></Link>
+                        <Link to="/"><img src={ICON_WHITEBG} ></img></Link>
                     </div>
 
                     <div className="navbar-links-container">
                         <div className="">
-                            <Link to='/moozi-website/client'>
+                            <Link to='/client'>
                             <div tabIndex={0} className="navbar-link-button navbar-button-hover">
                             {language === 'en' ? `Client` : `Cliente`}
                                 </div>
@@ -87,8 +87,8 @@ export const Navbar = () => {
                             {language === 'en' ? `Driver` : `Condutor`}
                                 </div>
                             <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                                <li><Link to='/moozi-website/driver'>{language === 'en' ? `Drive with Moozi` : `Conduz com a Moozi`}</Link></li>
-                                <li><Link to='/moozi-website/vehicle-category'>{language === 'en' ? `Vehicle Category` : `Categoria de Veículos`}</Link></li>
+                                <li><Link to='/driver'>{language === 'en' ? `Drive with Moozi` : `Conduz com a Moozi`}</Link></li>
+                                <li><Link to='/vehicle-category'>{language === 'en' ? `Vehicle Category` : `Categoria de Veículos`}</Link></li>
                             </ul>
                         </div>
 
@@ -97,8 +97,8 @@ export const Navbar = () => {
                                 {language == 'en' ? `About Us` : `Sobre Nós`}
                             </div>
                             <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                                <li><Link to='/moozi-website/about'>{language === 'en' ? `Who we Are` : `Quem Somos`}</Link></li>
-                                <li><Link to='/moozi-website/corporate'>{language === 'en' ? `Corporation Account` : `Conta Corporativa`}</Link></li>
+                                <li><Link to='/about'>{language === 'en' ? `Who we Are` : `Quem Somos`}</Link></li>
+                                <li><Link to='/corporate'>{language === 'en' ? `Corporation Account` : `Conta Corporativa`}</Link></li>
                             </ul>
                         </div>
 
@@ -191,7 +191,7 @@ export const Navbar = () => {
 
         {/* Navbar Title */}
         <div className="flex-1">
-          <Link to='/moozi-website/' className=" text-2xl mx-2 font-bold text-white">Moozi</Link>
+          <Link to='/' className=" text-2xl mx-2 font-bold text-white">Moozi</Link>
         </div>
         <div className="flex-none text-white">
             <ul className="menu menu-horizontal">
@@ -229,10 +229,10 @@ export const Navbar = () => {
 
             {/* Sidebar Links */}
             <ul className="text-3xl py-4">
-                <li className="pt-4"><Link to="/moozi-website/">{language === 'en' ? `Home` : `Página Inicial`}</Link></li>
-                <li className="py-4"><Link to="/moozi-website/client">{language === 'en' ? `Client` : `Cliente`}</Link></li>
-                <li><Link to="/moozi-website/driver">{language === 'en' ? `Driver` : `Condutor`}</Link></li>
-                <li className='py-4'><Link to='/moozi-website/about'>{language === 'en' ? `About Us` : `Sobre Nós`}</Link></li>
+                <li className="pt-4"><Link to="/">{language === 'en' ? `Home` : `Página Inicial`}</Link></li>
+                <li className="py-4"><Link to="/client">{language === 'en' ? `Client` : `Cliente`}</Link></li>
+                <li><Link to="/driver">{language === 'en' ? `Driver` : `Condutor`}</Link></li>
+                <li className='py-4'><Link to='/about'>{language === 'en' ? `About Us` : `Sobre Nós`}</Link></li>
             </ul>
 
             {/* Push this div to the bottom */}
