@@ -25,11 +25,11 @@ const CarouselCards = ({ cards }) => {
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex items-center gap-4 h-650px mx-5 ">
             {cards.map((card, index) => (
-              <div className='card-container h-650px '>
+              <div className='card-container h-650px py-5 '>
               <ReactCardFlip
                   key={index}
                   isFlipped={!!flippedCards[index]}
-                  flipDirection="horizontal"
+                  flipDirection="vertical"
                 >
                   {/* Card Front */}
                   <div
@@ -66,7 +66,7 @@ const CarouselCards = ({ cards }) => {
         </div>
 
         {/* Controls */}
-        <div className="flex justify-center my-20 gap-4 pb-10">
+        <div className="flex justify-center my-10 gap-4 pb-10">
           <button onClick={scrollPrev} className="btn btn-outline btn-sm">❮</button>
           <button onClick={scrollNext} className="btn btn-outline btn-sm">❯</button>
         </div>
