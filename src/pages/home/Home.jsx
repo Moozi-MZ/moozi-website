@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import {React, useEffect, useState} from 'react'
 import { Navbar } from '../../components/Navbar/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
@@ -27,6 +27,14 @@ const Home = () => {
     const { language } = useLanguage();
 
     console.log("Language from home: ", language);
+
+    const returnLanguage = () => {
+        if (language === 'en') {
+            return 'Book a ride';
+        } else {
+            return 'Marcar viagem';
+        }
+    }
 
     
 

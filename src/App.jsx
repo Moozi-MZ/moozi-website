@@ -1,5 +1,5 @@
 // Dependencies
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Route, Routes, Navigate } from 'react-router-dom';
 
 // Style
@@ -24,7 +24,15 @@ import TermsConditions from './pages/legal/TermsConditions';
 
 function App() {
 
-  const { language } = useLanguage();
+  let { language } = useLanguage();
+
+  const setLanguage = (lang) => {
+    if (lang === 'en') {
+      language = 'pt';
+    } else if (lang === 'pt') {
+      language = 'en';
+    }
+  }
   
 
   // useEffect(() => {
@@ -52,20 +60,25 @@ function App() {
   //   };
   // }, []);
 
-  
-      const targetH5 = document.querySelector('.web-booking-wrapper .iframe-header h5');
 
-      if (targetH5) {
-        if(language === 'en') {
-          targetH5.textContent = 'Book a Ride'; // or innerText, both work
-        }
-        else if(language === 'pt') {
-          targetH5.textContent = 'Marcar Viagem'; // or innerText, both work
-        }
-       
-      }; // check every 300ms
+  const targetH5 = document.querySelector('.web-booking-wrapper .iframe-header h5');
+  // This effect will run whenever the language changes
+  // and update the text content of the target element accordingly.
 
+  useEffect(() => {
+        const interval = setInterval(() => {
+    const targetH5 = document.querySelector('.web-booking-wrapper .iframe-header h5');
 
+    if (targetH5) {
+      targetH5.textContent = language === 'pt' ? 'Marcar Viagem' : 'Book a Ride';
+      clearInterval(interval); // stop checking once it's done
+    }
+  }, 300); // check every 300ms
+
+  return () => clearInterval(interval); // cleanup if component unmounts
+  }, [language]);
+      
+    
 
   return (
     <>

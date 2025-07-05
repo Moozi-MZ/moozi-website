@@ -3,7 +3,7 @@ import './RideDiv.css'
 import RideCard from '../RideCard/RideCard'
 import BASE from '../../assets/vehicles/moozi-base.svg'
 import DELUXE from '../../assets/vehicles/moozi-deluxe.svg';
-import RENTAL from '../../assets/vehicles/moozi-rental.jpg';
+import RENTAL from '../../assets/vehicles/moozi-rental2.jpeg';
 // import SUVLUX from '../../assets/vehicles/SUV car-bro.svg';
 
 const RideDiv = ({language}) => {

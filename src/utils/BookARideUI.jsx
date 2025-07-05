@@ -3,12 +3,6 @@ import { useEffect } from "react";
 
 const BookARideUI = () => {
 
-    
-
-
-    
-
-
     const RunBookingAPI = async () => {
 
         if (document.querySelector("script.peerbits")) return; // Prevent duplicates

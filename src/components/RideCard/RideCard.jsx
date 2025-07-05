@@ -5,12 +5,14 @@ import { UserIcon, BriefcaseIcon } from '@heroicons/react/24/outline';
 
 const RideCard = ({language, carPic, carTitle, carDescription, carPersonCapacity, carBagCapacity, carPricing, consulta}) => {
   return (
-    <div className="card bg-base-100 w-80 shadow-sm">
-        <figure className="px-10 pt-10">
+    <div className="card bg-base-100 max-w350 shadow-sm">
+        <figure className="px-10 pt-10 h-80 ">
             <img
             src={carPic}
             alt="car"
-            className="rounded-xl" />
+            className="rounded-xl object-cover"
+            size
+            />
         </figure>
         <div className="card-body items-center text-center">
             <h2 className="card-title">{carTitle}</h2>
