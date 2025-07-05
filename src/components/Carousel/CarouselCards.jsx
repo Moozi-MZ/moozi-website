@@ -21,7 +21,8 @@ const CarouselCards = ({ cards }) => {
   return (
     <>
       <div className="w-[100%] mx-auto h-750px space-y-1 carousel-container">
-        <div className="overflow" ref={emblaRef}>
+        {/* overflow hidden */}
+        <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex items-center gap-4 h-650px mx-5 ">
             {cards.map((card, index) => (
               <div className='card-container h-650px '>
