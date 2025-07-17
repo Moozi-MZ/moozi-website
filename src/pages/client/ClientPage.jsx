@@ -94,7 +94,7 @@ Descarrega a app Moozi, regista-te e experimenta uma nova forma de viajar pela c
       {language === 'en' ? (
         <>
           <li>Lightweight, fast, and easy-to-use app</li>
-          <li>Ride types: Classic, Deluxe, and Moozi Ela</li>
+          <li>Ride types: Moozi, Deluxe, and Moozi Elas</li>
           <li>Payment via M-Pesa, cash or Moozi balance</li>
           <li>Exclusive campaigns and vouchers</li>
           <li>Social responsibility and inclusion</li>
@@ -104,7 +104,7 @@ Descarrega a app Moozi, regista-te e experimenta uma nova forma de viajar pela c
       ) : (
         <>
           <li>Aplicação leve, rápida e fácil de usar</li>
-          <li>Categorias: Clássico, Deluxe e Moozi Ela</li>
+          <li>Categorias: Moozi, Deluxe e Moozi Elas</li>
           <li>Pagamento com M-Pesa, numerário ou saldo Moozi</li>
           <li>Campanhas e vouchers exclusivos</li>
           <li>Responsabilidade social e inclusão</li>
